@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Urban Thinking — Field Archive crawler.
+Oedi Field — archive crawler.
 
 Runs on a schedule via GitHub Actions. For each source in data/sources.json:
   1. Finds an RSS/Atom feed (uses the configured one, or tries common paths).
@@ -35,8 +35,7 @@ INDEX_PATH = os.path.join(ROOT, "data", "index.json")
 RUN_REPORT_PATH = os.path.join(ROOT, "data", "last_run.json")
 
 HEADERS = {
-    HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; UrbanThinkingArchive/1.0; RSS feed reader)",
+    "User-Agent": "Mozilla/5.0 (compatible; OediFieldArchive/1.0; RSS feed reader)",
     "Accept": "application/rss+xml, application/atom+xml, application/xml, text/html;q=0.8",
 }
 
