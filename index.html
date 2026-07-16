@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urban Thinking — Field Archive</title>
+<meta name="description" content="A searchable design-signal archive across architecture, fashion, art and hospitality — Indian and global sources.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #F6F1E7;
+    --ink: #2B2926;
+    --ink-soft: #6E675C;
+    --amber: #B9822F;
+    --amber-wash: #EADFC9;
+    --rule: #D8CFBD;
+    --card: #FCFAF4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+  body { background: var(--paper); color: var(--ink); font-family: 'Spectral', Georgia, serif; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; }
+  button, input { font: inherit; color: inherit; }
+  button { cursor: pointer; background: none; border: none; }
+  button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+
+  .wrap { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+
+  header { padding: 48px 0 0; }
+  .masthead { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; border-bottom: 2px solid var(--ink); padding-bottom: 16px; }
+  h1 { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: clamp(38px, 6vw, 72px); letter-spacing: 0.015em; line-height: 0.95; }
+  h1 .thin { color: var(--amber); }
+  .masthead-note { font-style: italic; font-weight: 300; color: var(--ink-soft); font-size: 14px; max-width: 320px; text-align: right; }
+
+  .modes { display: flex; gap: 4px; padding: 16px 0 0; border-bottom: 1px solid var(--rule); }
+  .mode-btn { font-family: 'Bebas Neue', sans-serif; font-size: 19px; letter-spacing: 0.06em; padding: 10px 18px; color: var(--ink-soft); border-bottom: 3px solid transparent; }
+  .mode-btn:hover { color: var(--ink); }
+  .mode-btn[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--amber); }
+
+  .toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; padding: 18px 0; position: sticky; top: 0; background: var(--paper); z-index: 5; border-bottom: 1px solid var(--rule); }
+  .search-box { flex: 1 1 260px; display: flex; align-items: center; border: 1px solid var(--ink-soft); border-radius: 999px; padding: 8px 18px; background: var(--card); }
+  .search-box input { flex: 1; border: none; background: none; font-size: 15px; }
+  .search-box input::placeholder { color: var(--ink-soft); font-style: italic; }
+
+  .cat-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 13px; border: 1px solid var(--rule); border-radius: 999px; color: var(--ink-soft); background: transparent; white-space: nowrap; }
+  .chip:hover { border-color: var(--ink-soft); color: var(--ink); }
+  .chip[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+
+  .upload-btn { font-size: 13px; letter-spacing: 0.06em; padding: 9px 18px; border: 1px solid var(--ink); border-radius: 999px; }
+  .upload-btn:hover { background: var(--ink); color: var(--paper); }
+  #imageInput { display: none; }
+
+  main { padding: 28px 0 80px; min-height: 60vh; }
+  .grid { column-count: 4; column-gap: 20px; }
+  @media (max-width: 1100px) { .grid { column-count: 3; } }
+  @media (max-width: 780px)  { .grid { column-count: 2; } }
+  @media (max-width: 480px)  { .grid { column-count: 1; } }
+
+  .card { break-inside: avoid; margin-bottom: 20px; background: var(--card); border: 1px solid var(--rule); display: block; text-decoration: none; transition: transform 140ms ease, box-shadow 140ms ease; }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(43,41,38,0.10); }
+  .card img { display: block; width: 100%; height: auto; background: var(--amber-wash); }
+  .card-body { padding: 12px 14px 14px; }
+  .card-meta { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+  .tag-label { font-family: 'Bebas Neue', sans-serif; font-size: 13px; letter-spacing: 0.1em; color: var(--amber); }
+  .source { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 55%; }
+  .summary { font-style: italic; font-weight: 300; font-size: 14.5px; color: var(--ink); border-left: 2px solid var(--amber); padding-left: 10px; margin-bottom: 8px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 5px; }
+  .tag-pill { font-size: 10.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); background: var(--amber-wash); padding: 3px 8px; border-radius: 999px; }
+
+  .domain-group { margin-bottom: 36px; }
+  .domain-title { font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 0.04em; color: var(--amber); border-bottom: 1px solid var(--rule); padding-bottom: 6px; margin-bottom: 14px; }
+
+  .state { padding: 60px 0; max-width: 580px; }
+  .state h2 { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 30px; letter-spacing: 0.03em; margin-bottom: 10px; }
+  .state p { color: var(--ink-soft); margin-bottom: 10px; }
+  .state code { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: 13px; background: var(--amber-wash); padding: 2px 6px; border-radius: 3px; }
+  .loading { padding: 60px 0; font-style: italic; color: var(--ink-soft); }
+
+  .preview-bar { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .preview-bar img { width: 64px; height: 64px; object-fit: cover; border: 1px solid var(--rule); }
+  .preview-bar .clear-btn { font-size: 12px; text-decoration: underline; color: var(--ink-soft); margin-left: auto; }
+
+  footer { border-top: 1px solid var(--rule); padding: 22px 0 48px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; font-size: 13px; color: var(--ink-soft); }
+  footer a { color: var(--amber); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <div class="masthead">
+    <h1>URBAN THINKING <span class="thin">/ FIELD ARCHIVE</span></h1>
+    <p class="masthead-note">Design signals across architecture, fashion, art and hospitality — auto-indexed daily from curated sources.</p>
+  </div>
+  <nav class="modes" aria-label="View mode">
+    <button class="mode-btn" data-mode="latest" aria-pressed="true">Latest</button>
+    <button class="mode-btn" data-mode="search">Search</button>
+    <button class="mode-btn" data-mode="image">Find similar</button>
+  </nav>
+</header>
+
+<main class="wrap">
+  <div class="toolbar" id="toolbar"></div>
+  <div id="content"><p class="loading">Loading the archive…</p></div>
+</main>
+
+<footer class="wrap">
+  <span id="footerNote">Auto-indexed from <span id="sourceCount">—</span> sources. Last updated <span id="lastUpdated">—</span>.</span>
+  <span>Edit sources anytime in <a href="data/sources.json">data/sources.json</a>.</span>
+</footer>
+
+<script>
+const WORKER_URL = "https://YOUR-WORKER-NAME.YOUR-SUBDOMAIN.workers.dev";
+
+const state = { mode: "latest", query: "", category: "all", index: [], queryTags: null, queryImage: null };
+
+const $toolbar = document.getElementById("toolbar");
+const $content = document.getElementById("content");
+
+async function loadIndex() {
+  try {
+    const res = await fetch("data/index.json?_=" + Date.now());
+    if (!res.ok) throw new Error("missing");
+    state.index = await res.json();
+    document.getElementById("sourceCount").textContent = new Set(state.index.map(i => i.source)).size;
+    const latest = state.index.reduce((max, i) => i.indexed_at > max ? i.indexed_at : max, "");
+    document.getElementById("lastUpdated").textContent = latest ? new Date(latest).toLocaleDateString() : "never yet";
+  } catch {
+    state.index = [];
+  }
+  buildToolbar();
+  render();
+}
+
+function buildToolbar() {
+  $toolbar.innerHTML = "";
+
+  if (state.mode === "search") {
+    const box = document.createElement("div");
+    box.className = "search-box";
+    box.innerHTML = `<input type="text" placeholder="Try “art deco”, “jaali”, “terracotta”…" aria-label="Search the archive" value="${escapeAttr(state.query)}">`;
+    box.querySelector("input").addEventListener("input", e => { state.query = e.target.value; render(); });
+    $toolbar.appendChild(box);
+  }
+
+  if (state.mode === "latest" || state.mode === "search") {
+    const chips = document.createElement("div");
+    chips.className = "cat-chips";
+    const cats = ["all", ...new Set(state.index.map(i => i.category).filter(Boolean))].sort((a,b)=> a==="all"?-1:b==="all"?1:a.localeCompare(b));
+    cats.forEach(c => {
+      const b = document.createElement("button");
+      b.className = "chip";
+      b.textContent = c === "all" ? "All" : c;
+      b.setAttribute("aria-pressed", state.category === c ? "true" : "false");
+      b.addEventListener("click", () => { state.category = c; buildToolbar(); render(); });
+      chips.appendChild(b);
+    });
+    $toolbar.appendChild(chips);
+  }
+
+  if (state.mode === "image") {
+    const btn = document.createElement("button");
+    btn.className = "upload-btn";
+    btn.textContent = "Upload an image";
+    const input = document.createElement("input");
+    input.type = "file"; input.accept = "image/*"; input.id = "imageInput";
+    input.addEventListener("change", handleImageUpload);
+    btn.addEventListener("click", () => input.click());
+    $toolbar.appendChild(btn);
+    $toolbar.appendChild(input);
+  }
+}
+
+document.querySelectorAll(".mode-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".mode-btn").forEach(b => b.setAttribute("aria-pressed", b === btn ? "true" : "false"));
+    state.mode = btn.dataset.mode;
+    buildToolbar();
+    render();
+  });
+});
+
+async function handleImageUpload(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  if (WORKER_URL.includes("YOUR-WORKER-NAME")) {
+    $content.innerHTML = `<div class="state"><h2>Relay not connected yet</h2><p>Deploy the Cloudflare Worker in <code>worker/worker.js</code> and paste its URL into <code>WORKER_URL</code> near the top of this file's script. See README.md.</p></div>`;
+    return;
+  }
+  $content.innerHTML = '<p class="loading">Looking at your image…</p>';
+
+  const reader = new FileReader();
+  reader.onload = async () => {
+    const base64 = reader.result.split(",")[1];
+    state.queryImage = reader.result;
+    try {
+      const res = await fetch(WORKER_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ imageBase64: base64, mediaType: file.type }),
+      });
+      const data = await res.json();
+      state.queryTags = data.tags || [];
+      state.queryCategory = data.category || null;
+      render();
+    } catch (err) {
+      $content.innerHTML = `<div class="state"><h2>Couldn't reach the relay</h2><p>${escapeHtml(String(err))}</p></div>`;
+    }
+  };
+  reader.readAsDataURL(file);
+}
+
+function scoreOverlap(itemTags, queryTags) {
+  if (!itemTags?.length || !queryTags?.length) return 0;
+  const a = new Set(itemTags.map(t => t.toLowerCase()));
+  const b = new Set(queryTags.map(t => t.toLowerCase()));
+  let hits = 0;
+  b.forEach(t => { if (a.has(t)) hits++; });
+  return hits / Math.max(a.size, b.size, 1);
+}
+
+function matchesText(item, q) {
+  const hay = [item.title, item.summary, item.category, ...(item.tags || [])].join(" ").toLowerCase();
+  return q.toLowerCase().split(/\s+/).filter(Boolean).every(term => hay.includes(term));
+}
+
+function render() {
+  if (!state.index.length) {
+    $content.innerHTML = `<div class="state"><h2>Archive is empty — first run pending</h2>
+      <p>The crawler runs daily via GitHub Actions. Trigger it manually from the repo's Actions tab (Crawl sources → Run workflow) to populate the archive right now instead of waiting for the schedule.</p></div>`;
+    return;
+  }
+  if (state.mode === "latest") return renderLatest();
+  if (state.mode === "search") return renderSearch();
+  if (state.mode === "image") return renderImageResults();
+}
+
+function renderLatest() {
+  let items = [...state.index].sort((a,b) => (b.indexed_at || "").localeCompare(a.indexed_at || ""));
+  if (state.category !== "all") items = items.filter(i => i.category === state.category);
+  items = items.slice(0, 80);
+  renderGrid(items, "No items in this category yet.");
+}
+
+function renderSearch() {
+  let items = state.index;
+  if (state.category !== "all") items = items.filter(i => i.category === state.category);
+  if (state.query.trim()) items = items.filter(i => matchesText(i, state.query.trim()));
+  items = [...items].sort((a,b) => (b.indexed_at || "").localeCompare(a.indexed_at || ""));
+  renderGrid(items, state.query.trim() ? `No matches for "${state.query.trim()}" yet — the archive grows daily, try again soon or broaden the term.` : "Type to search titles, summaries, and tags.");
+}
+
+function renderImageResults() {
+  $content.innerHTML = "";
+  if (!state.queryTags) {
+    $content.innerHTML = `<div class="state"><h2>Upload an image to begin</h2><p>It'll be matched against tags the crawler has already generated for every indexed item, grouped by domain.</p></div>`;
+    return;
+  }
+
+  const preview = document.createElement("div");
+  preview.className = "preview-bar wrap";
+  preview.style.padding = "14px 0";
+  preview.innerHTML = `
+    <img src="${state.queryImage}" alt="Uploaded query image">
+    <div>
+      <div class="tags">${(state.queryTags||[]).map(t => `<span class="tag-pill">${escapeHtml(t)}</span>`).join("")}</div>
+    </div>
+    <button class="clear-btn">Clear</button>`;
+  preview.querySelector(".clear-btn").addEventListener("click", () => { state.queryTags = null; state.queryImage = null; render(); });
+  $content.appendChild(preview);
+
+  const scored = state.index
+    .map(item => ({ item, score: scoreOverlap(item.tags, state.queryTags) }))
+    .filter(x => x.score > 0)
+    .sort((a,b) => b.score - a.score);
+
+  if (!scored.length) {
+    const empty = document.createElement("div");
+    empty.className = "state";
+    empty.innerHTML = `<h2>No close matches yet</h2><p>The archive doesn't have visually similar tagged items yet. It grows daily — try again as more sources get indexed.</p>`;
+    $content.appendChild(empty);
+    return;
+  }
+
+  const byDomain = {};
+  scored.forEach(({item}) => {
+    const key = item.category || "Uncategorized";
+    (byDomain[key] = byDomain[key] || []).push(item);
+  });
+
+  Object.entries(byDomain).forEach(([domain, items]) => {
+    const group = document.createElement("div");
+    group.className = "domain-group wrap";
+    group.innerHTML = `<h3 class="domain-title">${escapeHtml(domain)}</h3>`;
+    group.appendChild(buildGrid(items));
+    $content.appendChild(group);
+  });
+}
+
+function renderGrid(items, emptyMsg) {
+  if (!items.length) {
+    $content.innerHTML = `<div class="state"><h2>Nothing here</h2><p>${escapeHtml(emptyMsg)}</p></div>`;
+    return;
+  }
+  $content.innerHTML = "";
+  $content.appendChild(buildGrid(items));
+}
+
+function buildGrid(items) {
+  const grid = document.createElement("div");
+  grid.className = "grid";
+  items.forEach(item => {
+    const card = document.createElement("a");
+    card.className = "card";
+    card.href = item.link;
+    card.target = "_blank";
+    card.rel = "noopener";
+    card.innerHTML = `
+      ${item.image ? `<img src="${item.image}" alt="${escapeAttr(item.title)}" loading="lazy">` : ""}
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="tag-label">${escapeHtml(item.category || "—")}</span>
+          <span class="source">${escapeHtml(item.source || "")}</span>
+        </div>
+        ${item.summary ? `<p class="summary">${escapeHtml(item.summary)}</p>` : ""}
+        <div class="tags">${(item.tags||[]).slice(0,6).map(t => `<span class="tag-pill">${escapeHtml(t)}</span>`).join("")}</div>
+      </div>`;
+    grid.appendChild(card);
+  });
+  return grid;
+}
+
+function escapeHtml(s) { return (s||"").toString().replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function escapeAttr(s) { return escapeHtml(s); }
+
+loadIndex();
+</script>
+</body>
+</html>
