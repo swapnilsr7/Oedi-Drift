@@ -58,21 +58,43 @@
   #imageInput { display: none; }
 
   main { padding: 28px 0 80px; min-height: 60vh; }
-  .grid { column-count: 4; column-gap: 20px; }
-  @media (max-width: 1100px) { .grid { column-count: 3; } }
-  @media (max-width: 780px)  { .grid { column-count: 2; } }
-  @media (max-width: 480px)  { .grid { column-count: 1; } }
+  .grid { column-count: 3; column-gap: 24px; }
+  @media (max-width: 1000px) { .grid { column-count: 2; } }
+  @media (max-width: 620px)  { .grid { column-count: 1; } }
 
-  .card { break-inside: avoid; margin-bottom: 20px; background: var(--card); border: 1px solid var(--rule); display: block; text-decoration: none; transition: transform 140ms ease, box-shadow 140ms ease; }
+  .card { break-inside: avoid; margin-bottom: 24px; background: var(--card); border: 1px solid var(--rule); display: block; text-decoration: none; transition: transform 140ms ease, box-shadow 140ms ease; }
   .card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(43,41,38,0.10); }
-  .card img { display: block; width: 100%; height: auto; background: var(--amber-wash); }
-  .card-body { padding: 12px 14px 14px; }
-  .card-meta { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
-  .tag-label { font-family: 'Bebas Neue', sans-serif; font-size: 13px; letter-spacing: 0.1em; color: var(--amber); }
-  .source { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 55%; }
-  .summary { font-style: italic; font-weight: 300; font-size: 14.5px; color: var(--ink); border-left: 2px solid var(--amber); padding-left: 10px; margin-bottom: 8px; }
+
+  .carousel { position: relative; }
+  .carousel img { display: block; width: 100%; height: auto; background: var(--amber-wash); }
+  .car-btn {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    width: 30px; height: 30px; border-radius: 50%;
+    background: rgba(43,41,38,0.55); color: var(--paper);
+    font-size: 18px; line-height: 1; display: none;
+    align-items: center; justify-content: center;
+  }
+  .carousel:hover .car-btn, .carousel:focus-within .car-btn { display: flex; }
+  @media (hover: none) { .car-btn { display: flex; background: rgba(43,41,38,0.4); } }
+  .car-btn.prev { left: 8px; }
+  .car-btn.next { right: 8px; }
+  .dots { position: absolute; bottom: 8px; left: 0; right: 0; display: flex; justify-content: center; gap: 5px; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: rgba(246,241,231,0.65); }
+  .dot.active { background: var(--amber); }
+
+  .card-body { padding: 10px 12px 12px; }
+  .card-meta { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 5px; }
+  .tag-label { font-family: 'Bebas Neue', sans-serif; font-size: 12px; letter-spacing: 0.1em; color: var(--amber); }
+  .source { font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 55%; }
+  .summary {
+    font-style: italic; font-weight: 300; font-size: 13.5px; color: var(--ink);
+    border-left: 2px solid var(--amber); padding-left: 9px; margin-bottom: 7px;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    overflow: hidden; cursor: pointer;
+  }
+  .summary.expanded { -webkit-line-clamp: unset; }
   .tags { display: flex; flex-wrap: wrap; gap: 5px; }
-  .tag-pill { font-size: 10.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); background: var(--amber-wash); padding: 3px 8px; border-radius: 999px; }
+  .tag-pill { font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); background: var(--amber-wash); padding: 2px 7px; border-radius: 999px; }
 
   .domain-group { margin-bottom: 36px; }
   .domain-title { font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 0.04em; color: var(--amber); border-bottom: 1px solid var(--rule); padding-bottom: 6px; margin-bottom: 14px; }
@@ -317,21 +339,60 @@ function buildGrid(items) {
   const grid = document.createElement("div");
   grid.className = "grid";
   items.forEach(item => {
+    const imgs = (item.images && item.images.length) ? item.images
+               : (item.image ? [item.image] : []);
     const card = document.createElement("a");
     card.className = "card";
     card.href = item.link;
     card.target = "_blank";
     card.rel = "noopener";
+
+    let media = "";
+    if (imgs.length) {
+      media = `<div class="carousel" data-i="0">
+        <img src="${imgs[0]}" alt="${escapeAttr(item.title)}" loading="lazy">
+        ${imgs.length > 1 ? `
+          <button class="car-btn prev" aria-label="Previous image">‹</button>
+          <button class="car-btn next" aria-label="Next image">›</button>
+          <div class="dots">${imgs.map((_, i) => `<span class="dot${i === 0 ? " active" : ""}"></span>`).join("")}</div>
+        ` : ""}
+      </div>`;
+    }
+
     card.innerHTML = `
-      ${item.image ? `<img src="${item.image}" alt="${escapeAttr(item.title)}" loading="lazy">` : ""}
+      ${media}
       <div class="card-body">
         <div class="card-meta">
           <span class="tag-label">${escapeHtml(item.category || "—")}</span>
           <span class="source">${escapeHtml(item.source || "")}</span>
         </div>
-        ${item.summary ? `<p class="summary">${escapeHtml(item.summary)}</p>` : ""}
-        <div class="tags">${(item.tags||[]).slice(0,6).map(t => `<span class="tag-pill">${escapeHtml(t)}</span>`).join("")}</div>
+        ${item.summary ? `<p class="summary" title="Tap to expand">${escapeHtml(item.summary)}</p>` : ""}
+        <div class="tags">${(item.tags || []).slice(0, 3).map(t => `<span class="tag-pill">${escapeHtml(t)}</span>`).join("")}</div>
       </div>`;
+
+    // Carousel controls (don't follow the card link when tapped)
+    if (imgs.length > 1) {
+      const car = card.querySelector(".carousel");
+      const img = car.querySelector("img");
+      const dots = [...car.querySelectorAll(".dot")];
+      const go = (delta, e) => {
+        e.preventDefault(); e.stopPropagation();
+        const i = ((parseInt(car.dataset.i, 10) + delta) % imgs.length + imgs.length) % imgs.length;
+        car.dataset.i = i;
+        img.src = imgs[i];
+        dots.forEach((d, j) => d.classList.toggle("active", j === i));
+      };
+      car.querySelector(".prev").addEventListener("click", e => go(-1, e));
+      car.querySelector(".next").addEventListener("click", e => go(1, e));
+    }
+
+    // Summary expands on tap instead of following the link
+    const sum = card.querySelector(".summary");
+    if (sum) sum.addEventListener("click", e => {
+      e.preventDefault(); e.stopPropagation();
+      sum.classList.toggle("expanded");
+    });
+
     grid.appendChild(card);
   });
   return grid;
