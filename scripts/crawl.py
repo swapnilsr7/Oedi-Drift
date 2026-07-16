@@ -131,17 +131,49 @@ def parse_feed(xml_text, source_homepage):
     return entries
 
 
-def fetch_page_image(url):
-    """If the feed didn't include an image, grab the article's og:image."""
+def extract_images_from_page(url, max_images=4):
+    """
+    Pull up to max_images usable images from an article/product page:
+    og:image first, then inline content images. Filters out icons, logos,
+    svgs and tracking pixels by URL heuristics (imperfect but cheap).
+    """
+    images = []
     try:
         r = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
         r.raise_for_status()
-        m = re.search(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', r.text, re.IGNORECASE)
-        if m:
-            return m.group(1)
+        html = r.text
     except requests.RequestException:
-        pass
-    return None
+        return images
+
+    candidates = re.findall(
+        r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', html, re.IGNORECASE
+    )
+    candidates += re.findall(r'<img[^>]+src=["\']([^"\']+)["\']', html)
+
+    skip_words = ("logo", "icon", "avatar", "sprite", "badge", "placeholder", "pixel", "advert")
+    seen = set()
+    for src in candidates:
+        if len(images) >= max_images:
+            break
+        src = urljoin(url, src.strip())
+        low = src.lower()
+        if not low.startswith("http"):
+            continue
+        if low.endswith(".svg") or low.endswith(".gif"):
+            continue
+        if any(w in low for w in skip_words):
+            continue
+        if src in seen:
+            continue
+        seen.add(src)
+        images.append(src)
+    return images
+
+
+def fetch_page_image(url):
+    """Back-compat single-image helper."""
+    imgs = extract_images_from_page(url, max_images=1)
+    return imgs[0] if imgs else None
 
 
 def fetch_shopify_products(homepage, limit=20):
@@ -165,13 +197,15 @@ def fetch_shopify_products(homepage, limit=20):
         if not handle or not title:
             continue
         image = None
-        if p.get("images"):
-            image = p["images"][0].get("src")
+        images = [img.get("src") for img in (p.get("images") or []) if img.get("src")][:4]
+        if images:
+            image = images[0]
         entries.append({
             "title": title,
             "link": urljoin(homepage, "/products/" + handle),
             "published": p.get("published_at", "") or "",
             "image": image,
+            "images": images,
         })
     return entries, None
 
@@ -290,7 +324,13 @@ def main():
             if entry["link"] in known_links:
                 continue
 
-            image = entry.get("image") or fetch_page_image(entry["link"])
+            images = entry.get("images") or []
+            if not images:
+                images = extract_images_from_page(entry["link"], max_images=4)
+                if entry.get("image") and entry["image"] not in images:
+                    images.insert(0, entry["image"])
+                images = images[:4]
+            image = images[0] if images else None
             analysis = analyze_with_claude(
                 client, entry["title"], entry["link"], image,
                 existing_categories(index), pinned_category=src.get("category")
@@ -300,6 +340,7 @@ def main():
                 "title": entry["title"],
                 "link": entry["link"],
                 "image": image,
+                "images": images,
                 "published": entry.get("published", ""),
                 "source": name,
                 "domain": domain_of(entry["link"]),
