@@ -1,0 +1,194 @@
+{
+  "run_at": "2026-07-16T15:31:36.829807+00:00",
+  "new_items": 246,
+  "sources": [
+    {
+      "name": "ArchDaily",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "Domus",
+      "status": "nothing_fetched",
+      "new_items": 0
+    },
+    {
+      "name": "1stDibs",
+      "status": "nothing_fetched",
+      "new_items": 0
+    },
+    {
+      "name": "Architizer",
+      "status": "ok",
+      "new_items": 10
+    },
+    {
+      "name": "STIRworld",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "Rethinking The Future",
+      "status": "nothing_fetched",
+      "new_items": 0
+    },
+    {
+      "name": "Dezeen",
+      "status": "nothing_fetched",
+      "new_items": 0
+    },
+    {
+      "name": "designboom architecture",
+      "status": "ok",
+      "new_items": 10
+    },
+    {
+      "name": "Architectural Digest",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "W. David Marx — Culture",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "Wallpaper*",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "Frame",
+      "status": "nothing_fetched",
+      "new_items": 0
+    },
+    {
+      "name": "Metropolis",
+      "status": "nothing_fetched",
+      "new_items": 0
+    },
+    {
+      "name": "Sleeper",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "Hospitality Design",
+      "status": "ok",
+      "new_items": 10
+    },
+    {
+      "name": "Design Hotels",
+      "status": "nothing_fetched",
+      "new_items": 0
+    },
+    {
+      "name": "The Business of Fashion",
+      "status": "nothing_fetched",
+      "new_items": 0
+    },
+    {
+      "name": "Core77",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "Yanko Design",
+      "status": "ok",
+      "new_items": 10
+    },
+    {
+      "name": "designboom",
+      "status": "ok",
+      "new_items": 6
+    },
+    {
+      "name": "Fast Company Co.Design",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "Frieze",
+      "status": "nothing_fetched",
+      "new_items": 0
+    },
+    {
+      "name": "Artsy",
+      "status": "nothing_fetched",
+      "new_items": 0
+    },
+    {
+      "name": "Artforum",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "Monocle",
+      "status": "ok",
+      "new_items": 10
+    },
+    {
+      "name": "Architectural Digest India",
+      "status": "nothing_fetched",
+      "new_items": 0,
+      "feed_status": "fetch_failed: 400 Client Error: Bad Request for url: https://www.architecturaldigest.in/feed/"
+    },
+    {
+      "name": "Domus India",
+      "status": "ok",
+      "new_items": 10
+    },
+    {
+      "name": "Vogue",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "Vogue India",
+      "status": "nothing_fetched",
+      "new_items": 0,
+      "feed_status": "fetch_failed: 400 Client Error: Bad Request for url: https://www.vogue.in/feed/"
+    },
+    {
+      "name": "The Jewellery Editor",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "Art Jewelry Forum",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "Lost In Jewellery Magazine",
+      "status": "nothing_fetched",
+      "new_items": 0
+    },
+    {
+      "name": "Outhouse Jewellery",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "MISHO",
+      "status": "nothing_fetched",
+      "new_items": 0,
+      "shopify_status": "products_json_failed: 403 Client Error: Forbidden for url: https://www.mishodesigns.com/products.json?limit=20"
+    },
+    {
+      "name": "PRERTO",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "Dezeen — Jewellery tag",
+      "status": "nothing_fetched",
+      "new_items": 0
+    },
+    {
+      "name": "Wallpaper — Jewellery tag",
+      "status": "ok",
+      "new_items": 12
+    }
+  ]
+}
