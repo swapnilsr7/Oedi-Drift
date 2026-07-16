@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-16T15:31:36.829807+00:00",
-  "new_items": 246,
+  "run_at": "2026-07-16T17:16:03.233640+00:00",
+  "new_items": 174,
   "sources": [
     {
       "name": "ArchDaily",
@@ -13,14 +13,14 @@
       "new_items": 0
     },
     {
-      "name": "1stDibs",
-      "status": "nothing_fetched",
-      "new_items": 0
+      "name": "1stDibs Introspective",
+      "status": "ok",
+      "new_items": 10
     },
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 10
+      "new_items": 0
     },
     {
       "name": "STIRworld",
@@ -40,7 +40,7 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 10
+      "new_items": 0
     },
     {
       "name": "Architectural Digest",
@@ -50,7 +50,7 @@
     {
       "name": "W. David Marx — Culture",
       "status": "ok",
-      "new_items": 12
+      "new_items": 3
     },
     {
       "name": "Wallpaper*",
@@ -75,12 +75,7 @@
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 10
-    },
-    {
-      "name": "Design Hotels",
-      "status": "nothing_fetched",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "The Business of Fashion",
@@ -90,22 +85,22 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 12
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 10
+      "new_items": 2
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 6
+      "new_items": 0
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 12
+      "new_items": 7
     },
     {
       "name": "Frieze",
@@ -120,23 +115,27 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 12
+      "new_items": 2
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 10
+      "new_items": 0
     },
     {
       "name": "Architectural Digest India",
-      "status": "nothing_fetched",
-      "new_items": 0,
-      "feed_status": "fetch_failed: 400 Client Error: Bad Request for url: https://www.architecturaldigest.in/feed/"
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "designboom design",
+      "status": "ok",
+      "new_items": 8
     },
     {
       "name": "Domus India",
       "status": "ok",
-      "new_items": 10
+      "new_items": 0
     },
     {
       "name": "Vogue",
@@ -145,19 +144,18 @@
     },
     {
       "name": "Vogue India",
-      "status": "nothing_fetched",
-      "new_items": 0,
-      "feed_status": "fetch_failed: 400 Client Error: Bad Request for url: https://www.vogue.in/feed/"
+      "status": "ok",
+      "new_items": 12
     },
     {
       "name": "The Jewellery Editor",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Art Jewelry Forum",
       "status": "ok",
-      "new_items": 12
+      "new_items": 0
     },
     {
       "name": "Lost In Jewellery Magazine",
@@ -167,18 +165,18 @@
     {
       "name": "Outhouse Jewellery",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "MISHO",
-      "status": "nothing_fetched",
-      "new_items": 0,
+      "status": "ok",
+      "new_items": 6,
       "shopify_status": "products_json_failed: 403 Client Error: Forbidden for url: https://www.mishodesigns.com/products.json?limit=20"
     },
     {
       "name": "PRERTO",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Dezeen — Jewellery tag",
