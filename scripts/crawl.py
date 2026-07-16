@@ -35,7 +35,9 @@ INDEX_PATH = os.path.join(ROOT, "data", "index.json")
 RUN_REPORT_PATH = os.path.join(ROOT, "data", "last_run.json")
 
 HEADERS = {
-    "User-Agent": "UrbanThinkingArchiveBot/1.0 (+personal research archive; contact via GitHub repo)"
+    HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; UrbanThinkingArchive/1.0; RSS feed reader)",
+    "Accept": "application/rss+xml, application/atom+xml, application/xml, text/html;q=0.8",
 }
 
 MAX_NEW_ITEMS_PER_SOURCE = 12  # cap per run so one prolific source doesn't drown out others
