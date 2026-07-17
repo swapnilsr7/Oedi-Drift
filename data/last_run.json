@@ -1,11 +1,11 @@
 {
-  "run_at": "2026-07-16T17:16:03.233640+00:00",
-  "new_items": 174,
+  "run_at": "2026-07-17T09:31:04.027535+00:00",
+  "new_items": 109,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 12
+      "new_items": 9
     },
     {
       "name": "Domus",
@@ -15,7 +15,7 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 10
+      "new_items": 0
     },
     {
       "name": "Architizer",
@@ -40,22 +40,22 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "W. David Marx — Culture",
       "status": "ok",
-      "new_items": 3
+      "new_items": 0
     },
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 12
+      "new_items": 3
     },
     {
       "name": "Frame",
@@ -70,7 +70,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 12
+      "new_items": 6
     },
     {
       "name": "Hospitality Design",
@@ -85,22 +85,22 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 3
+      "new_items": 0
     },
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 2
+      "new_items": 8
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 0
+      "new_items": 4
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 7
+      "new_items": 12
     },
     {
       "name": "Frieze",
@@ -115,12 +115,12 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 2
+      "new_items": 6
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Architectural Digest India",
@@ -130,7 +130,7 @@
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 8
+      "new_items": 0
     },
     {
       "name": "Domus India",
@@ -150,7 +150,7 @@
     {
       "name": "The Jewellery Editor",
       "status": "ok",
-      "new_items": 8
+      "new_items": 0
     },
     {
       "name": "Art Jewelry Forum",
@@ -165,18 +165,19 @@
     {
       "name": "Outhouse Jewellery",
       "status": "ok",
-      "new_items": 8
+      "new_items": 0
     },
     {
       "name": "MISHO",
-      "status": "ok",
-      "new_items": 6,
+      "status": "nothing_fetched",
+      "new_items": 0,
+      "feed_status": "fetch_failed: 503 Server Error: Service Unavailable for url: https://www.mishodesigns.com/blogs/the-misho-journal.atom",
       "shopify_status": "products_json_failed: 403 Client Error: Forbidden for url: https://www.mishodesigns.com/products.json?limit=20"
     },
     {
       "name": "PRERTO",
       "status": "ok",
-      "new_items": 8
+      "new_items": 1
     },
     {
       "name": "Dezeen — Jewellery tag",
@@ -186,7 +187,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 12
+      "new_items": 0
     }
   ]
 }
