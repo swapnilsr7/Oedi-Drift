@@ -1,11 +1,11 @@
 {
-  "run_at": "2026-07-17T09:31:04.027535+00:00",
-  "new_items": 109,
+  "run_at": "2026-07-18T09:09:59.244016+00:00",
+  "new_items": 118,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 9
+      "new_items": 12
     },
     {
       "name": "Domus",
@@ -15,12 +15,12 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "STIRworld",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 3
+      "new_items": 7
     },
     {
       "name": "Frame",
@@ -70,7 +70,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 6
+      "new_items": 1
     },
     {
       "name": "Hospitality Design",
@@ -85,12 +85,12 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 8
+      "new_items": 10
     },
     {
       "name": "designboom",
@@ -120,12 +120,12 @@
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 12
+      "new_items": 6
     },
     {
       "name": "designboom design",
@@ -165,7 +165,7 @@
     {
       "name": "Outhouse Jewellery",
       "status": "ok",
-      "new_items": 0
+      "new_items": 5
     },
     {
       "name": "MISHO",
@@ -176,8 +176,9 @@
     },
     {
       "name": "PRERTO",
-      "status": "ok",
-      "new_items": 1
+      "status": "nothing_fetched",
+      "new_items": 0,
+      "shopify_status": "products_json_failed: 503 Server Error: Service Unavailable for url: https://www.prerto.com/products.json?limit=20"
     },
     {
       "name": "Dezeen — Jewellery tag",
