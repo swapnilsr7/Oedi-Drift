@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-21T10:52:56.820381+00:00",
-  "new_items": 111,
+  "run_at": "2026-07-22T10:54:01.260984+00:00",
+  "new_items": 121,
   "sources": [
     {
       "name": "ArchDaily",
@@ -20,7 +20,7 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "STIRworld",
@@ -40,12 +40,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 4
+      "new_items": 7
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 7
+      "new_items": 4
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 4
+      "new_items": 10
     },
     {
       "name": "Frame",
@@ -75,7 +75,7 @@
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 0
+      "new_items": 4
     },
     {
       "name": "The Business of Fashion",
@@ -85,7 +85,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "Yanko Design",
@@ -95,7 +95,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 7
+      "new_items": 4
     },
     {
       "name": "Fast Company Co.Design",
@@ -115,7 +115,7 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 7
+      "new_items": 8
     },
     {
       "name": "Monocle",
