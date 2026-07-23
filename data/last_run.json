@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-22T10:54:01.260984+00:00",
-  "new_items": 121,
+  "run_at": "2026-07-23T10:54:10.773000+00:00",
+  "new_items": 124,
   "sources": [
     {
       "name": "ArchDaily",
@@ -20,12 +20,12 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Rethinking The Future",
@@ -40,12 +40,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 7
+      "new_items": 2
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 4
+      "new_items": 7
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 10
+      "new_items": 12
     },
     {
       "name": "Frame",
@@ -70,12 +70,12 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 4
+      "new_items": 2
     },
     {
       "name": "The Business of Fashion",
@@ -85,7 +85,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
@@ -95,7 +95,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 4
+      "new_items": 8
     },
     {
       "name": "Fast Company Co.Design",
@@ -115,17 +115,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 8
+      "new_items": 7
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 2
+      "new_items": 3
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 2
+      "new_items": 4
     },
     {
       "name": "designboom design",
@@ -155,7 +155,7 @@
     {
       "name": "Art Jewelry Forum",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Lost In Jewellery Magazine",
