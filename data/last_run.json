@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-23T10:54:10.773000+00:00",
-  "new_items": 124,
+  "run_at": "2026-07-24T10:35:46.527461+00:00",
+  "new_items": 117,
   "sources": [
     {
       "name": "ArchDaily",
@@ -20,7 +20,7 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "STIRworld",
@@ -40,12 +40,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 2
+      "new_items": 4
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 7
+      "new_items": 8
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Frame",
@@ -75,7 +75,7 @@
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "The Business of Fashion",
@@ -95,7 +95,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 8
+      "new_items": 5
     },
     {
       "name": "Fast Company Co.Design",
@@ -115,17 +115,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 7
+      "new_items": 8
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "designboom design",
