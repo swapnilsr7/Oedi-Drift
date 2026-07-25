@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-24T10:35:46.527461+00:00",
-  "new_items": 117,
+  "run_at": "2026-07-25T09:20:42.529716+00:00",
+  "new_items": 106,
   "sources": [
     {
       "name": "ArchDaily",
@@ -15,7 +15,7 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Architizer",
@@ -25,7 +25,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Rethinking The Future",
@@ -45,7 +45,7 @@
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 8
+      "new_items": 5
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 8
+      "new_items": 10
     },
     {
       "name": "Frame",
@@ -70,7 +70,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Hospitality Design",
@@ -95,7 +95,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 5
+      "new_items": 2
     },
     {
       "name": "Fast Company Co.Design",
@@ -115,7 +115,7 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 8
+      "new_items": 6
     },
     {
       "name": "Monocle",
@@ -125,7 +125,7 @@
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 3
+      "new_items": 1
     },
     {
       "name": "designboom design",
@@ -165,7 +165,7 @@
     {
       "name": "Outhouse Jewellery",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "MISHO",
@@ -176,7 +176,7 @@
     {
       "name": "PRERTO",
       "status": "ok",
-      "new_items": 12
+      "new_items": 11
     },
     {
       "name": "Dezeen — Jewellery tag",
