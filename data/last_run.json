@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-07-28T11:29:52.770915+00:00",
-  "new_items": 106,
+  "run_at": "2026-07-29T11:37:00.089405+00:00",
+  "new_items": 121,
   "sources": [
     {
       "name": "ArchDaily",
@@ -20,12 +20,12 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Rethinking The Future",
@@ -45,7 +45,7 @@
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 10
+      "new_items": 9
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 8
+      "new_items": 11
     },
     {
       "name": "Frame",
@@ -75,7 +75,7 @@
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "The Business of Fashion",
@@ -85,7 +85,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 2
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
@@ -95,7 +95,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 6
+      "new_items": 7
     },
     {
       "name": "Fast Company Co.Design",
@@ -115,22 +115,22 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 8
+      "new_items": 6
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Domus India",
@@ -165,7 +165,7 @@
     {
       "name": "Outhouse Jewellery",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "MISHO",
@@ -176,7 +176,7 @@
     {
       "name": "PRERTO",
       "status": "ok",
-      "new_items": 0
+      "new_items": 12
     },
     {
       "name": "Dezeen — Jewellery tag",
