@@ -1,11 +1,11 @@
 {
-  "run_at": "2026-07-30T10:54:13.856504+00:00",
-  "new_items": 114,
+  "run_at": "2026-07-31T11:36:51.887842+00:00",
+  "new_items": 105,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 12
+      "new_items": 11
     },
     {
       "name": "Domus",
@@ -40,12 +40,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 5
+      "new_items": 2
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 5
+      "new_items": 6
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 12
+      "new_items": 10
     },
     {
       "name": "Frame",
@@ -70,7 +70,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Hospitality Design",
@@ -85,7 +85,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
@@ -95,7 +95,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 4
+      "new_items": 7
     },
     {
       "name": "Fast Company Co.Design",
@@ -120,12 +120,12 @@
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 6
+      "new_items": 3
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "designboom design",
@@ -165,7 +165,7 @@
     {
       "name": "Outhouse Jewellery",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "MISHO",
@@ -176,7 +176,7 @@
     {
       "name": "PRERTO",
       "status": "ok",
-      "new_items": 8
+      "new_items": 3
     },
     {
       "name": "Dezeen — Jewellery tag",
@@ -186,7 +186,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     }
   ]
 }
