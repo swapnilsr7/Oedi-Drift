@@ -1,11 +1,11 @@
 {
-  "run_at": "2026-08-01T10:12:19.046866+00:00",
-  "new_items": 99,
+  "run_at": "2026-08-02T10:10:41.060338+00:00",
+  "new_items": 63,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 12
+      "new_items": 11
     },
     {
       "name": "Domus",
@@ -15,12 +15,12 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "STIRworld",
@@ -40,12 +40,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 6
+      "new_items": 0
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 9
+      "new_items": 4
     },
     {
       "name": "Frame",
@@ -70,12 +70,12 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "The Business of Fashion",
@@ -85,22 +85,22 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 3
+      "new_items": 0
     },
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 10
+      "new_items": 9
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 4
+      "new_items": 2
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Frieze",
@@ -115,7 +115,7 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 7
+      "new_items": 0
     },
     {
       "name": "Monocle",
@@ -125,7 +125,7 @@
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "designboom design",
