@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-03T13:30:47.667936+00:00",
-  "new_items": 88,
+  "run_at": "2026-08-04T11:36:13.361004+00:00",
+  "new_items": 124,
   "sources": [
     {
       "name": "ArchDaily",
@@ -25,7 +25,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Rethinking The Future",
@@ -39,14 +39,13 @@
     },
     {
       "name": "designboom architecture",
-      "status": "nothing_fetched",
-      "new_items": 0,
-      "feed_status": "fetch_failed: 521 Server Error: <none> for url: https://www.designboom.com/architecture/feed/"
+      "status": "ok",
+      "new_items": 6
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 2
+      "new_items": 5
     },
     {
       "name": "W. David Marx — Culture",
@@ -56,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 7
+      "new_items": 11
     },
     {
       "name": "Frame",
@@ -70,8 +69,9 @@
     },
     {
       "name": "Sleeper",
-      "status": "ok",
-      "new_items": 1
+      "status": "nothing_fetched",
+      "new_items": 0,
+      "feed_status": "fetch_failed: HTTPSConnectionPool(host='www.sleepermagazine.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.sleepermagazine.com', port=443) at 0x7f4acd235750>, 'Connection to www.sleepermagazine.com timed out. (connect timeout=15)'))"
     },
     {
       "name": "Hospitality Design",
@@ -86,7 +86,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
@@ -95,9 +95,8 @@
     },
     {
       "name": "designboom",
-      "status": "nothing_fetched",
-      "new_items": 0,
-      "feed_status": "fetch_failed: 521 Server Error: <none> for url: https://www.designboom.com/feed/"
+      "status": "ok",
+      "new_items": 7
     },
     {
       "name": "Fast Company Co.Design",
@@ -117,12 +116,12 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 0
+      "new_items": 7
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
@@ -131,9 +130,8 @@
     },
     {
       "name": "designboom design",
-      "status": "nothing_fetched",
-      "new_items": 0,
-      "feed_status": "fetch_failed: 521 Server Error: <none> for url: https://www.designboom.com/design/feed/"
+      "status": "ok",
+      "new_items": 1
     },
     {
       "name": "Domus India",
@@ -158,7 +156,7 @@
     {
       "name": "Art Jewelry Forum",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Lost In Jewellery Magazine",
@@ -168,7 +166,7 @@
     {
       "name": "Outhouse Jewellery",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "MISHO",
@@ -179,7 +177,7 @@
     {
       "name": "PRERTO",
       "status": "ok",
-      "new_items": 0
+      "new_items": 12
     },
     {
       "name": "Dezeen — Jewellery tag",
