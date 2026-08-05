@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-04T11:36:13.361004+00:00",
-  "new_items": 124,
+  "run_at": "2026-08-05T11:32:21.364330+00:00",
+  "new_items": 108,
   "sources": [
     {
       "name": "ArchDaily",
@@ -40,7 +40,7 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 6
+      "new_items": 3
     },
     {
       "name": "Architectural Digest",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 11
+      "new_items": 5
     },
     {
       "name": "Frame",
@@ -69,9 +69,8 @@
     },
     {
       "name": "Sleeper",
-      "status": "nothing_fetched",
-      "new_items": 0,
-      "feed_status": "fetch_failed: HTTPSConnectionPool(host='www.sleepermagazine.com', port=443): Max retries exceeded with url: /feed/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.sleepermagazine.com', port=443) at 0x7f4acd235750>, 'Connection to www.sleepermagazine.com timed out. (connect timeout=15)'))"
+      "status": "ok",
+      "new_items": 1
     },
     {
       "name": "Hospitality Design",
@@ -86,7 +85,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 3
+      "new_items": 0
     },
     {
       "name": "Yanko Design",
@@ -116,17 +115,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 7
+      "new_items": 6
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 2
+      "new_items": 3
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "designboom design",
@@ -166,7 +165,7 @@
     {
       "name": "Outhouse Jewellery",
       "status": "ok",
-      "new_items": 8
+      "new_items": 2
     },
     {
       "name": "MISHO",
