@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-05T11:32:21.364330+00:00",
-  "new_items": 108,
+  "run_at": "2026-08-06T11:37:10.132171+00:00",
+  "new_items": 125,
   "sources": [
     {
       "name": "ArchDaily",
@@ -25,7 +25,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Rethinking The Future",
@@ -40,12 +40,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 3
+      "new_items": 7
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 5
+      "new_items": 10
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 5
+      "new_items": 6
     },
     {
       "name": "Frame",
@@ -70,12 +70,12 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 0
+      "new_items": 4
     },
     {
       "name": "The Business of Fashion",
@@ -95,7 +95,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 7
+      "new_items": 3
     },
     {
       "name": "Fast Company Co.Design",
@@ -115,22 +115,22 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 6
+      "new_items": 8
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 4
+      "new_items": 8
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Domus India",
@@ -165,7 +165,7 @@
     {
       "name": "Outhouse Jewellery",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "MISHO",
