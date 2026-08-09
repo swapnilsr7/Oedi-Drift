@@ -1,11 +1,11 @@
 {
-  "run_at": "2026-08-08T05:29:18.978408+00:00",
-  "new_items": 123,
+  "run_at": "2026-08-09T05:37:33.890043+00:00",
+  "new_items": 72,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 12
+      "new_items": 11
     },
     {
       "name": "Domus",
@@ -15,17 +15,17 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Rethinking The Future",
@@ -40,12 +40,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 9
+      "new_items": 0
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 9
+      "new_items": 5
     },
     {
       "name": "Frame",
@@ -70,12 +70,12 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "The Business of Fashion",
@@ -90,17 +90,17 @@
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 10
+      "new_items": 8
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 7
+      "new_items": 3
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Frieze",
@@ -115,12 +115,12 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 7
+      "new_items": 0
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 5
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
@@ -140,7 +140,7 @@
     {
       "name": "Vogue",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Vogue India",
@@ -176,7 +176,7 @@
     {
       "name": "PRERTO",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Dezeen — Jewellery tag",
