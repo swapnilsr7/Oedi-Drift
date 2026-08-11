@@ -1,11 +1,11 @@
 {
-  "run_at": "2026-08-10T08:18:56.803504+00:00",
-  "new_items": 60,
+  "run_at": "2026-08-11T06:03:08.591662+00:00",
+  "new_items": 98,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 9
+      "new_items": 12
     },
     {
       "name": "Domus",
@@ -20,12 +20,12 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Rethinking The Future",
@@ -40,12 +40,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 3
+      "new_items": 1
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 0
+      "new_items": 4
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 4
+      "new_items": 10
     },
     {
       "name": "Frame",
@@ -70,12 +70,12 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "The Business of Fashion",
@@ -90,17 +90,17 @@
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 9
+      "new_items": 10
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 2
+      "new_items": 5
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 3
+      "new_items": 12
     },
     {
       "name": "Frieze",
@@ -115,17 +115,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 0
+      "new_items": 6
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 2
+      "new_items": 3
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 5
+      "new_items": 2
     },
     {
       "name": "designboom design",
@@ -140,7 +140,7 @@
     {
       "name": "Vogue",
       "status": "ok",
-      "new_items": 9
+      "new_items": 12
     },
     {
       "name": "Vogue India",
@@ -165,7 +165,7 @@
     {
       "name": "Outhouse Jewellery",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "MISHO",
