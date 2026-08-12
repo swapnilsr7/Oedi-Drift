@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-11T06:03:08.591662+00:00",
-  "new_items": 98,
+  "run_at": "2026-08-12T08:03:26.169244+00:00",
+  "new_items": 105,
   "sources": [
     {
       "name": "ArchDaily",
@@ -25,7 +25,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Rethinking The Future",
@@ -40,12 +40,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 1
+      "new_items": 5
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 4
+      "new_items": 7
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 10
+      "new_items": 9
     },
     {
       "name": "Frame",
@@ -75,7 +75,7 @@
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 3
+      "new_items": 0
     },
     {
       "name": "The Business of Fashion",
@@ -115,7 +115,7 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 6
+      "new_items": 8
     },
     {
       "name": "Monocle",
@@ -125,7 +125,7 @@
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 2
+      "new_items": 6
     },
     {
       "name": "designboom design",
@@ -155,7 +155,7 @@
     {
       "name": "Art Jewelry Forum",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Lost In Jewellery Magazine",
