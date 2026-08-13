@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-12T08:03:26.169244+00:00",
-  "new_items": 105,
+  "run_at": "2026-08-13T08:04:57.634507+00:00",
+  "new_items": 102,
   "sources": [
     {
       "name": "ArchDaily",
@@ -45,7 +45,7 @@
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 7
+      "new_items": 9
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 9
+      "new_items": 7
     },
     {
       "name": "Frame",
@@ -70,12 +70,12 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 2
+      "new_items": 3
     },
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "The Business of Fashion",
@@ -95,7 +95,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 5
+      "new_items": 3
     },
     {
       "name": "Fast Company Co.Design",
@@ -115,17 +115,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 8
+      "new_items": 6
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 6
+      "new_items": 2
     },
     {
       "name": "designboom design",
