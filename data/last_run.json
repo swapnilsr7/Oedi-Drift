@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-13T08:04:57.634507+00:00",
-  "new_items": 102,
+  "run_at": "2026-08-14T08:00:56.582615+00:00",
+  "new_items": 111,
   "sources": [
     {
       "name": "ArchDaily",
@@ -45,7 +45,7 @@
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 9
+      "new_items": 7
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 7
+      "new_items": 12
     },
     {
       "name": "Frame",
@@ -70,7 +70,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "Hospitality Design",
@@ -95,7 +95,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "Fast Company Co.Design",
@@ -120,12 +120,12 @@
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 4
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 2
+      "new_items": 4
     },
     {
       "name": "designboom design",
@@ -165,7 +165,7 @@
     {
       "name": "Outhouse Jewellery",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "MISHO",
@@ -186,7 +186,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     }
   ]
 }
