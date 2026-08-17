@@ -1,11 +1,11 @@
 {
-  "run_at": "2026-08-16T03:53:38.950534+00:00",
-  "new_items": 79,
+  "run_at": "2026-08-17T03:55:53.639708+00:00",
+  "new_items": 56,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 11
+      "new_items": 8
     },
     {
       "name": "Domus",
@@ -40,12 +40,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 7
+      "new_items": 3
     },
     {
       "name": "Frame",
@@ -85,7 +85,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 12
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
@@ -100,7 +100,7 @@
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 8
+      "new_items": 6
     },
     {
       "name": "Frieze",
@@ -125,7 +125,7 @@
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "designboom design",
@@ -140,7 +140,7 @@
     {
       "name": "Vogue",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Vogue India",
