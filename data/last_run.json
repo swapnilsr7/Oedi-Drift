@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-18T03:50:20.871006+00:00",
-  "new_items": 111,
+  "run_at": "2026-08-19T03:51:53.293884+00:00",
+  "new_items": 121,
   "sources": [
     {
       "name": "ArchDaily",
@@ -40,12 +40,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 2
+      "new_items": 3
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 2
+      "new_items": 5
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 10
+      "new_items": 9
     },
     {
       "name": "Frame",
@@ -69,13 +69,13 @@
     },
     {
       "name": "Sleeper",
-      "status": "nothing_fetched",
-      "new_items": 0
+      "status": "ok",
+      "new_items": 4
     },
     {
       "name": "Hospitality Design",
-      "status": "ok",
-      "new_items": 1
+      "status": "nothing_fetched",
+      "new_items": 0
     },
     {
       "name": "The Business of Fashion",
@@ -85,7 +85,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 3
+      "new_items": 5
     },
     {
       "name": "Yanko Design",
@@ -95,7 +95,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 5
+      "new_items": 6
     },
     {
       "name": "Fast Company Co.Design",
@@ -115,17 +115,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 7
+      "new_items": 4
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "designboom design",
@@ -155,7 +155,7 @@
     {
       "name": "Art Jewelry Forum",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Lost In Jewellery Magazine",
@@ -165,7 +165,7 @@
     {
       "name": "Outhouse Jewellery",
       "status": "ok",
-      "new_items": 0
+      "new_items": 12
     },
     {
       "name": "MISHO",
@@ -176,7 +176,7 @@
     {
       "name": "PRERTO",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Dezeen — Jewellery tag",
