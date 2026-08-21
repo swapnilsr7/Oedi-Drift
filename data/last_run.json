@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-20T03:52:08.188214+00:00",
-  "new_items": 126,
+  "run_at": "2026-08-21T03:55:12.408059+00:00",
+  "new_items": 124,
   "sources": [
     {
       "name": "ArchDaily",
@@ -20,7 +20,7 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "STIRworld",
@@ -40,12 +40,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 5
+      "new_items": 4
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 7
+      "new_items": 12
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +55,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 6
+      "new_items": 8
     },
     {
       "name": "Frame",
@@ -95,7 +95,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 5
+      "new_items": 3
     },
     {
       "name": "Fast Company Co.Design",
@@ -120,12 +120,12 @@
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 10
+      "new_items": 3
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "designboom design",
@@ -165,7 +165,7 @@
     {
       "name": "Outhouse Jewellery",
       "status": "ok",
-      "new_items": 8
+      "new_items": 7
     },
     {
       "name": "MISHO",
