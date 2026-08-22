@@ -3,8 +3,7 @@
 Oedi Field — archive crawler.
 
 Runs on a schedule via GitHub Actions. For each source in data/sources.json:
-  1. Finds an RSS/Atom feed (configured or auto-discovered), and/or reads a
-     Shopify store's public product catalog.
+  1. Finds an RSS/Atom feed (configured or auto-discovered).
   2. Pulls recent entries (title, link, published date, up to 4 images).
   3. Dedups robustly: link URLs are normalized (tracking params stripped)
      and same-title-same-source repeats are skipped. A cleanup pass also
@@ -19,7 +18,6 @@ Runs on a schedule via GitHub Actions. For each source in data/sources.json:
 
 Per-source options in sources.json:
   "category": "Jewellery"        -> pin every item's category
-  "shopify": true                -> also index product drops
   "exclude_keywords": ["horoscope"] -> skip entries whose title contains any
 """
 
@@ -221,32 +219,6 @@ def extract_images_from_page(url, max_images=4):
     return images
 
 
-def fetch_shopify_products(homepage, limit=20):
-    url = urljoin(homepage, "/products.json?limit=%d" % limit)
-    try:
-        r = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-        r.raise_for_status()
-        data = r.json()
-    except (requests.RequestException, ValueError) as e:
-        return [], f"products_json_failed: {e}"
-
-    entries = []
-    for p in data.get("products", []):
-        handle = p.get("handle")
-        title = (p.get("title") or "").strip()
-        if not handle or not title:
-            continue
-        images = [img.get("src") for img in (p.get("images") or []) if img.get("src")][:4]
-        entries.append({
-            "title": title,
-            "link": urljoin(homepage, "/products/" + handle),
-            "published": p.get("published_at", "") or "",
-            "image": images[0] if images else None,
-            "images": images,
-        })
-    return entries, None
-
-
 def existing_categories(index):
     return sorted({item["category"] for item in index if item.get("category") and item["category"] != "Uncategorized"})
 
@@ -324,6 +296,12 @@ def main():
     pins = {s["name"]: s.get("category") for s in sources}
     index = load_json(INDEX_PATH, [])
 
+    # Purge shopping/product links: the archive tracks editorial signals,
+    # not store inventory. Removes previously indexed product-drop cards.
+    before_shop = len(index)
+    index = [i for i in index if "/products/" not in urlparse(i.get("link", "")).path.lower()]
+    removed_shopping = before_shop - len(index)
+
     # Cleanup pass: remove duplicates accumulated by earlier runs.
     before = len(index)
     index = dedupe_index(index)
@@ -336,6 +314,7 @@ def main():
         "run_at": datetime.now(timezone.utc).isoformat(),
         "new_items": 0,
         "removed_duplicates": removed_duplicates,
+        "removed_shopping_links": removed_shopping,
         "analysis_errors": 0,
         "analysis_error_sample": None,
         "repaired": 0,
@@ -360,12 +339,6 @@ def main():
                 entries.extend(parse_feed(r.text, homepage))
             except requests.RequestException as e:
                 report_entry["feed_status"] = f"fetch_failed: {e}"
-
-        if src.get("shopify"):
-            products, shop_err = fetch_shopify_products(homepage)
-            entries.extend(products)
-            if shop_err:
-                report_entry["shopify_status"] = shop_err
 
         if not entries:
             report_entry["status"] = "nothing_fetched"

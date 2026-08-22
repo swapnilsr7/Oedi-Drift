@@ -24,12 +24,15 @@ def main():
     analysis_errors = report.get("analysis_errors", 0)
     repaired = report.get("repaired", 0)
     removed_dupes = report.get("removed_duplicates", 0)
+    removed_shop = report.get("removed_shopping_links", 0)
 
     lines = [f"**New items indexed:** {report['new_items']}"]
     if repaired:
         lines.append(f"**Previously broken items repaired:** {repaired}")
     if removed_dupes:
         lines.append(f"**Duplicate items removed from the archive:** {removed_dupes}")
+    if removed_shop:
+        lines.append(f"**Shopping/product links purged from the archive:** {removed_shop}")
     lines.append("")
 
     if analysis_errors:
@@ -63,7 +66,7 @@ def main():
     elif broken:
         title += " — action needed"
 
-    if report["new_items"] == 0 and not broken and not analysis_errors and not repaired and not removed_dupes:
+    if report["new_items"] == 0 and not broken and not analysis_errors and not repaired and not removed_dupes and not removed_shop:
         print("Nothing new and nothing broken — skipping issue.")
         return
 
