@@ -3,18 +3,24 @@
 Oedi Field — archive crawler.
 
 Runs on a schedule via GitHub Actions. For each source in data/sources.json:
-  1. Finds an RSS/Atom feed (uses the configured one, or tries common paths).
-  2. Pulls recent entries (title, link, published date, image).
-  3. Skips anything already in data/index.json (dedup by link).
-  4. Sends new items to Claude for: a short summary, a domain category
-     (reusing existing categories where possible), and style/descriptor
-     tags used later for similarity search.
-  5. Writes everything to data/index.json, which the static site reads.
-  6. Writes a run report to data/last_run.json (used to open a GitHub
-     Issue summarizing what's new, and to flag any source that failed).
+  1. Finds an RSS/Atom feed (configured or auto-discovered), and/or reads a
+     Shopify store's public product catalog.
+  2. Pulls recent entries (title, link, published date, up to 4 images).
+  3. Dedups robustly: link URLs are normalized (tracking params stripped)
+     and same-title-same-source repeats are skipped. A cleanup pass also
+     removes duplicates already present in the index from earlier runs.
+  4. Sends new items to Claude for summary, category (pinned per-source or
+     AI-decided), and style tags. If an image URL is blocked, retries
+     text-only rather than failing.
+  5. Repairs previously broken items (Uncategorized + no summary) a batch
+     per run, so temporary API failures heal automatically.
+  6. Writes data/index.json and data/last_run.json, including
+     analysis-error and duplicate-removal counts for the Issue report.
 
-This script is intentionally dependency-light (stdlib + requests + anthropic)
-so it runs fast and cheap on GitHub Actions' free tier.
+Per-source options in sources.json:
+  "category": "Jewellery"        -> pin every item's category
+  "shopify": true                -> also index product drops
+  "exclude_keywords": ["horoscope"] -> skip entries whose title contains any
 """
 
 import json
@@ -39,7 +45,8 @@ HEADERS = {
     "Accept": "application/rss+xml, application/atom+xml, application/xml, text/html;q=0.8",
 }
 
-MAX_NEW_ITEMS_PER_SOURCE = 12  # cap per run so one prolific source doesn't drown out others
+MAX_NEW_ITEMS_PER_SOURCE = 12
+REPAIR_PER_RUN = 40
 REQUEST_TIMEOUT = 15
 
 COMMON_FEED_PATHS = ["feed/", "feed", "rss/", "rss", "atom.xml", "rss.xml", "feed.xml"]
@@ -57,8 +64,55 @@ def save_json(path, data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 
+def normalize_link(url):
+    """
+    Canonical form for dedup: drop query strings (utm_* tracking params make
+    the same article look like a new URL every run), fragments, trailing
+    slashes, www, and case differences in the host.
+    """
+    try:
+        p = urlparse(url)
+        host = p.netloc.lower().replace("www.", "")
+        path = p.path.rstrip("/")
+        return host + path
+    except Exception:
+        return url
+
+
+def title_key(source, title):
+    return (source, re.sub(r"\s+", " ", (title or "").strip().lower()))
+
+
+def dedupe_index(index):
+    """
+    One-time-per-run cleanup of duplicates already in the archive.
+    Keeps the first occurrence, but upgrades to a later duplicate if the
+    kept one is broken (Uncategorized) and the duplicate was analyzed fine.
+    """
+    by_link = {}
+    for item in index:
+        k = normalize_link(item.get("link", ""))
+        if k not in by_link:
+            by_link[k] = item
+        else:
+            kept = by_link[k]
+            if kept.get("category") == "Uncategorized" and item.get("category") not in (None, "", "Uncategorized"):
+                by_link[k] = item
+
+    by_title = {}
+    for item in by_link.values():
+        k = title_key(item.get("source", ""), item.get("title", ""))
+        if k not in by_title:
+            by_title[k] = item
+        else:
+            kept = by_title[k]
+            if kept.get("category") == "Uncategorized" and item.get("category") not in (None, "", "Uncategorized"):
+                by_title[k] = item
+
+    return list(by_title.values())
+
+
 def discover_feed(homepage):
-    """Try the homepage's <link rel=alternate> tag first, then common paths."""
     try:
         r = requests.get(homepage, headers=HEADERS, timeout=REQUEST_TIMEOUT)
         r.raise_for_status()
@@ -90,14 +144,12 @@ NS = {
 
 
 def parse_feed(xml_text, source_homepage):
-    """Parse RSS 2.0 or Atom into a flat list of entries. Best-effort, tolerant of quirks."""
     entries = []
     try:
         root = ET.fromstring(xml_text)
     except ET.ParseError:
         return entries
 
-    # RSS 2.0
     for item in root.findall(".//item"):
         title = (item.findtext("title") or "").strip()
         link = (item.findtext("link") or "").strip()
@@ -118,7 +170,6 @@ def parse_feed(xml_text, source_homepage):
         if title and link:
             entries.append({"title": title, "link": link, "published": pub, "image": image})
 
-    # Atom
     for entry in root.findall(".//atom:entry", NS):
         title = (entry.findtext("atom:title", default="", namespaces=NS) or "").strip()
         link_el = entry.find("atom:link", NS)
@@ -132,11 +183,6 @@ def parse_feed(xml_text, source_homepage):
 
 
 def extract_images_from_page(url, max_images=4):
-    """
-    Pull up to max_images usable images from an article/product page:
-    og:image first, then inline content images. Filters out icons, logos,
-    svgs and tracking pixels by URL heuristics (imperfect but cheap).
-    """
     images = []
     try:
         r = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
@@ -148,6 +194,8 @@ def extract_images_from_page(url, max_images=4):
     candidates = re.findall(
         r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)["\']', html, re.IGNORECASE
     )
+    candidates += re.findall(r'<img[^>]+data-src=["\']([^"\']+)["\']', html)
+    candidates += re.findall(r'<img[^>]+data-lazy-src=["\']([^"\']+)["\']', html)
     candidates += re.findall(r'<img[^>]+src=["\']([^"\']+)["\']', html)
 
     skip_words = ("logo", "icon", "avatar", "sprite", "badge", "placeholder", "pixel", "advert")
@@ -155,7 +203,10 @@ def extract_images_from_page(url, max_images=4):
     for src in candidates:
         if len(images) >= max_images:
             break
-        src = urljoin(url, src.strip())
+        src = src.strip()
+        if src.startswith("data:"):
+            continue
+        src = urljoin(url, src)
         low = src.lower()
         if not low.startswith("http"):
             continue
@@ -170,18 +221,7 @@ def extract_images_from_page(url, max_images=4):
     return images
 
 
-def fetch_page_image(url):
-    """Back-compat single-image helper."""
-    imgs = extract_images_from_page(url, max_images=1)
-    return imgs[0] if imgs else None
-
-
 def fetch_shopify_products(homepage, limit=20):
-    """
-    Shopify stores expose their public product catalog at /products.json.
-    Returns (entries, error_string_or_None). Used for brand sources where
-    new product drops are the trend signal.
-    """
     url = urljoin(homepage, "/products.json?limit=%d" % limit)
     try:
         r = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
@@ -196,30 +236,22 @@ def fetch_shopify_products(homepage, limit=20):
         title = (p.get("title") or "").strip()
         if not handle or not title:
             continue
-        image = None
         images = [img.get("src") for img in (p.get("images") or []) if img.get("src")][:4]
-        if images:
-            image = images[0]
         entries.append({
             "title": title,
             "link": urljoin(homepage, "/products/" + handle),
             "published": p.get("published_at", "") or "",
-            "image": image,
+            "image": images[0] if images else None,
             "images": images,
         })
     return entries, None
 
 
 def existing_categories(index):
-    return sorted({item["category"] for item in index if item.get("category")})
+    return sorted({item["category"] for item in index if item.get("category") and item["category"] != "Uncategorized"})
 
 
 def analyze_with_claude(client, title, link, image_url, known_categories, pinned_category=None):
-    """
-    Ask Claude for: 1-line summary, a domain category, tags.
-    If the source has a pinned category (set in sources.json), Claude only
-    provides summary + tags and the category is forced to the pinned value.
-    """
     category_hint = ", ".join(known_categories) if known_categories else "none yet — you're defining the first ones"
     if pinned_category:
         category_clause = f'"category": "{pinned_category}"'
@@ -246,16 +278,24 @@ Respond ONLY with JSON, no preamble, no markdown fences, in exactly this shape:
     try:
         content = [{"type": "text", "text": prompt}]
         if image_url:
-            # Let Claude look at the image itself when available for richer tags.
             content = [
                 {"type": "image", "source": {"type": "url", "url": image_url}},
                 {"type": "text", "text": prompt},
             ]
-        resp = client.messages.create(
-            model="claude-sonnet-4-6",
-            max_tokens=400,
-            messages=[{"role": "user", "content": content}],
-        )
+        try:
+            resp = client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=400,
+                messages=[{"role": "user", "content": content}],
+            )
+        except Exception:
+            if not image_url:
+                raise
+            resp = client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=400,
+                messages=[{"role": "user", "content": [{"type": "text", "text": prompt}]}],
+            )
         text = resp.content[0].text.strip()
         text = re.sub(r"^```(json)?|```$", "", text.strip(), flags=re.MULTILINE).strip()
         parsed = json.loads(text)
@@ -281,20 +321,36 @@ def main():
 
     client = Anthropic(api_key=api_key)
     sources = load_json(SOURCES_PATH, {"sources": []})["sources"]
+    pins = {s["name"]: s.get("category") for s in sources}
     index = load_json(INDEX_PATH, [])
-    known_links = {item["link"] for item in index}
 
-    run_report = {"run_at": datetime.now(timezone.utc).isoformat(), "new_items": 0, "sources": []}
+    # Cleanup pass: remove duplicates accumulated by earlier runs.
+    before = len(index)
+    index = dedupe_index(index)
+    removed_duplicates = before - len(index)
+
+    known_links = {normalize_link(item["link"]) for item in index}
+    known_titles = {title_key(item.get("source", ""), item.get("title", "")) for item in index}
+
+    run_report = {
+        "run_at": datetime.now(timezone.utc).isoformat(),
+        "new_items": 0,
+        "removed_duplicates": removed_duplicates,
+        "analysis_errors": 0,
+        "analysis_error_sample": None,
+        "repaired": 0,
+        "sources": [],
+    }
 
     for src in sources:
         name = src["name"]
         homepage = src["homepage"]
         feed_url = src.get("rss")
+        exclude = [k.lower() for k in src.get("exclude_keywords", [])]
         report_entry = {"name": name, "status": "ok", "new_items": 0}
 
         entries = []
 
-        # Editorial channel: configured or auto-discovered RSS/Atom feed.
         if not feed_url:
             feed_url = discover_feed(homepage)
         if feed_url:
@@ -305,7 +361,6 @@ def main():
             except requests.RequestException as e:
                 report_entry["feed_status"] = f"fetch_failed: {e}"
 
-        # Product channel: Shopify stores' public catalog (new drops as signal).
         if src.get("shopify"):
             products, shop_err = fetch_shopify_products(homepage)
             entries.extend(products)
@@ -321,7 +376,11 @@ def main():
         for entry in entries:
             if new_count >= MAX_NEW_ITEMS_PER_SOURCE:
                 break
-            if entry["link"] in known_links:
+            nl = normalize_link(entry["link"])
+            tk = title_key(name, entry["title"])
+            if nl in known_links or tk in known_titles:
+                continue
+            if exclude and any(k in entry["title"].lower() for k in exclude):
                 continue
 
             images = entry.get("images") or []
@@ -331,10 +390,15 @@ def main():
                     images.insert(0, entry["image"])
                 images = images[:4]
             image = images[0] if images else None
+
             analysis = analyze_with_claude(
                 client, entry["title"], entry["link"], image,
                 existing_categories(index), pinned_category=src.get("category")
             )
+            if analysis.get("_error"):
+                run_report["analysis_errors"] += 1
+                if not run_report["analysis_error_sample"]:
+                    run_report["analysis_error_sample"] = analysis["_error"][:300]
 
             index.append({
                 "title": entry["title"],
@@ -349,13 +413,34 @@ def main():
                 "tags": analysis.get("tags", []),
                 "indexed_at": datetime.now(timezone.utc).isoformat(),
             })
-            known_links.add(entry["link"])
+            known_links.add(nl)
+            known_titles.add(tk)
             new_count += 1
-            time.sleep(0.5)  # be polite to Claude + source rate limits
+            time.sleep(0.5)
 
         report_entry["new_items"] = new_count
         run_report["new_items"] += new_count
         run_report["sources"].append(report_entry)
+
+    # Self-repair: re-analyze previously broken items, bounded per run.
+    for item in index:
+        if run_report["repaired"] >= REPAIR_PER_RUN:
+            break
+        if item.get("category") == "Uncategorized" and not item.get("summary"):
+            analysis = analyze_with_claude(
+                client, item["title"], item["link"], item.get("image"),
+                existing_categories(index), pinned_category=pins.get(item.get("source"))
+            )
+            if analysis.get("_error"):
+                run_report["analysis_errors"] += 1
+                if not run_report["analysis_error_sample"]:
+                    run_report["analysis_error_sample"] = analysis["_error"][:300]
+                break
+            item["summary"] = analysis.get("summary", "")
+            item["category"] = analysis.get("category", "Uncategorized")
+            item["tags"] = analysis.get("tags", [])
+            run_report["repaired"] += 1
+            time.sleep(0.5)
 
     save_json(INDEX_PATH, index)
     save_json(RUN_REPORT_PATH, run_report)
