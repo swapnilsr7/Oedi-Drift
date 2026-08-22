@@ -1,11 +1,16 @@
 {
-  "run_at": "2026-08-22T03:48:00.241066+00:00",
-  "new_items": 114,
+  "run_at": "2026-08-22T11:09:37.810510+00:00",
+  "new_items": 43,
+  "removed_duplicates": 30,
+  "removed_shopping_links": 352,
+  "analysis_errors": 0,
+  "analysis_error_sample": null,
+  "repaired": 40,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 12
+      "new_items": 3
     },
     {
       "name": "Domus",
@@ -15,17 +20,17 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Rethinking The Future",
@@ -40,12 +45,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 3
+      "new_items": 1
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 10
+      "new_items": 0
     },
     {
       "name": "W. David Marx — Culture",
@@ -55,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 7
+      "new_items": 4
     },
     {
       "name": "Frame",
@@ -85,22 +90,22 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 3
+      "new_items": 0
     },
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 10
+      "new_items": 0
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 6
+      "new_items": 1
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Frieze",
@@ -115,17 +120,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 7
+      "new_items": 0
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 3
+      "new_items": 0
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "designboom design",
@@ -145,7 +150,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 12
+      "new_items": 11
     },
     {
       "name": "The Jewellery Editor",
@@ -164,19 +169,18 @@
     },
     {
       "name": "Outhouse Jewellery",
-      "status": "ok",
+      "status": "nothing_fetched",
       "new_items": 0
     },
     {
       "name": "MISHO",
       "status": "ok",
-      "new_items": 0,
-      "shopify_status": "products_json_failed: 403 Client Error: Forbidden for url: https://www.mishodesigns.com/products.json?limit=20"
+      "new_items": 0
     },
     {
       "name": "PRERTO",
-      "status": "ok",
-      "new_items": 12
+      "status": "nothing_fetched",
+      "new_items": 0
     },
     {
       "name": "Dezeen — Jewellery tag",
