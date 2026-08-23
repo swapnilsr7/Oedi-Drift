@@ -1,8 +1,8 @@
 {
-  "run_at": "2026-08-22T11:09:37.810510+00:00",
-  "new_items": 43,
-  "removed_duplicates": 30,
-  "removed_shopping_links": 352,
+  "run_at": "2026-08-23T03:55:49.325972+00:00",
+  "new_items": 38,
+  "removed_duplicates": 0,
+  "removed_shopping_links": 0,
   "analysis_errors": 0,
   "analysis_error_sample": null,
   "repaired": 40,
@@ -10,7 +10,7 @@
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 3
+      "new_items": 9
     },
     {
       "name": "Domus",
@@ -30,7 +30,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Rethinking The Future",
@@ -50,7 +50,7 @@
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "W. David Marx — Culture",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 4
+      "new_items": 0
     },
     {
       "name": "Frame",
@@ -95,17 +95,17 @@
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 0
+      "new_items": 8
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 8
+      "new_items": 1
     },
     {
       "name": "Frieze",
@@ -125,12 +125,12 @@
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "designboom design",
@@ -145,12 +145,12 @@
     {
       "name": "Vogue",
       "status": "ok",
-      "new_items": 12
+      "new_items": 3
     },
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 11
+      "new_items": 12
     },
     {
       "name": "The Jewellery Editor",
