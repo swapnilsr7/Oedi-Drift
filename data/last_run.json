@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-24T03:59:52.393774+00:00",
-  "new_items": 52,
+  "run_at": "2026-08-25T03:53:49.736266+00:00",
+  "new_items": 102,
   "removed_duplicates": 0,
   "removed_shopping_links": 0,
   "analysis_errors": 0,
@@ -10,7 +10,7 @@
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 7
+      "new_items": 12
     },
     {
       "name": "Domus",
@@ -25,12 +25,12 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Rethinking The Future",
@@ -45,12 +45,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 0
+      "new_items": 5
     },
     {
       "name": "W. David Marx — Culture",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 5
+      "new_items": 10
     },
     {
       "name": "Frame",
@@ -75,7 +75,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Hospitality Design",
@@ -90,22 +90,22 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 9
+      "new_items": 10
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 2
+      "new_items": 7
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 6
+      "new_items": 12
     },
     {
       "name": "Frieze",
@@ -120,17 +120,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 0
+      "new_items": 7
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 1
+      "new_items": 4
     },
     {
       "name": "designboom design",
@@ -145,7 +145,7 @@
     {
       "name": "Vogue",
       "status": "ok",
-      "new_items": 7
+      "new_items": 12
     },
     {
       "name": "Vogue India",
@@ -155,12 +155,12 @@
     {
       "name": "The Jewellery Editor",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Art Jewelry Forum",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Lost In Jewellery Magazine",
