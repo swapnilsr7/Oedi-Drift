@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-25T03:53:49.736266+00:00",
-  "new_items": 102,
+  "run_at": "2026-08-26T03:57:50.646452+00:00",
+  "new_items": 103,
   "removed_duplicates": 0,
   "removed_shopping_links": 0,
   "analysis_errors": 0,
@@ -50,7 +50,7 @@
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 5
+      "new_items": 9
     },
     {
       "name": "W. David Marx — Culture",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 10
+      "new_items": 9
     },
     {
       "name": "Frame",
@@ -100,7 +100,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 7
+      "new_items": 5
     },
     {
       "name": "Fast Company Co.Design",
@@ -120,17 +120,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 7
+      "new_items": 6
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 4
+      "new_items": 5
     },
     {
       "name": "designboom design",
@@ -155,12 +155,12 @@
     {
       "name": "The Jewellery Editor",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Art Jewelry Forum",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Lost In Jewellery Magazine",
@@ -190,7 +190,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     }
   ]
 }
