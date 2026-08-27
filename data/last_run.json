@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-08-26T03:57:50.646452+00:00",
-  "new_items": 103,
+  "run_at": "2026-08-27T14:03:01.471464+00:00",
+  "new_items": 114,
   "removed_duplicates": 0,
   "removed_shopping_links": 0,
   "analysis_errors": 0,
@@ -25,12 +25,12 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 1
+      "new_items": 4
     },
     {
       "name": "Rethinking The Future",
@@ -45,12 +45,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 2
+      "new_items": 6
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 9
+      "new_items": 6
     },
     {
       "name": "W. David Marx — Culture",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 9
+      "new_items": 12
     },
     {
       "name": "Frame",
@@ -75,7 +75,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Hospitality Design",
@@ -90,7 +90,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "Yanko Design",
@@ -100,7 +100,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 5
+      "new_items": 4
     },
     {
       "name": "Fast Company Co.Design",
@@ -120,22 +120,22 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 6
+      "new_items": 5
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 5
+      "new_items": 6
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Domus India",
@@ -190,7 +190,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     }
   ]
 }
