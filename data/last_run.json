@@ -1,11 +1,11 @@
 {
-  "run_at": "2026-08-27T14:03:01.471464+00:00",
-  "new_items": 114,
+  "run_at": "2026-08-28T15:14:08.139631+00:00",
+  "new_items": 103,
   "removed_duplicates": 0,
   "removed_shopping_links": 0,
-  "analysis_errors": 0,
-  "analysis_error_sample": null,
-  "repaired": 40,
+  "analysis_errors": 1,
+  "analysis_error_sample": "Extra data: line 8 column 1 (char 461)",
+  "repaired": 36,
   "sources": [
     {
       "name": "ArchDaily",
@@ -20,17 +20,17 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 4
+      "new_items": 1
     },
     {
       "name": "Rethinking The Future",
@@ -45,12 +45,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 6
+      "new_items": 3
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 6
+      "new_items": 8
     },
     {
       "name": "W. David Marx — Culture",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Frame",
@@ -75,7 +75,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Hospitality Design",
@@ -90,7 +90,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 4
+      "new_items": 6
     },
     {
       "name": "Yanko Design",
@@ -100,7 +100,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 4
+      "new_items": 7
     },
     {
       "name": "Fast Company Co.Design",
@@ -125,17 +125,17 @@
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 6
+      "new_items": 0
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Domus India",
@@ -155,7 +155,7 @@
     {
       "name": "The Jewellery Editor",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Art Jewelry Forum",
@@ -190,7 +190,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     }
   ]
 }
