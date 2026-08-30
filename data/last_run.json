@@ -1,16 +1,16 @@
 {
-  "run_at": "2026-08-29T09:56:15.220979+00:00",
-  "new_items": 81,
+  "run_at": "2026-08-30T09:07:37.805747+00:00",
+  "new_items": 60,
   "removed_duplicates": 0,
   "removed_shopping_links": 0,
-  "analysis_errors": 39,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeWr1EXK86g31VjcRZA7d'}",
+  "analysis_errors": 61,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeYfkxPf7dyfUre25ay37'}",
   "repaired": 0,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Domus",
@@ -30,7 +30,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Rethinking The Future",
@@ -45,12 +45,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "W. David Marx — Culture",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 7
+      "new_items": 5
     },
     {
       "name": "Frame",
@@ -90,22 +90,22 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 10
+      "new_items": 8
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 12
+      "new_items": 7
     },
     {
       "name": "Frieze",
@@ -120,7 +120,7 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 7
+      "new_items": 0
     },
     {
       "name": "Monocle",
