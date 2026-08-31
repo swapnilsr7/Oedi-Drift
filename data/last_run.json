@@ -1,16 +1,16 @@
 {
-  "run_at": "2026-08-30T09:07:37.805747+00:00",
-  "new_items": 60,
+  "run_at": "2026-08-31T09:36:16.252225+00:00",
+  "new_items": 65,
   "removed_duplicates": 0,
   "removed_shopping_links": 0,
-  "analysis_errors": 61,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeYfkxPf7dyfUre25ay37'}",
+  "analysis_errors": 66,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeabkZnQM35racpnUgeNw'}",
   "repaired": 0,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 8
+      "new_items": 11
     },
     {
       "name": "Domus",
@@ -30,7 +30,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Rethinking The Future",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 5
+      "new_items": 4
     },
     {
       "name": "Frame",
@@ -95,12 +95,12 @@
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 8
+      "new_items": 10
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 2
+      "new_items": 4
     },
     {
       "name": "Fast Company Co.Design",
@@ -145,7 +145,7 @@
     {
       "name": "Vogue",
       "status": "ok",
-      "new_items": 12
+      "new_items": 11
     },
     {
       "name": "Vogue India",
@@ -160,7 +160,7 @@
     {
       "name": "Art Jewelry Forum",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Lost In Jewellery Magazine",
