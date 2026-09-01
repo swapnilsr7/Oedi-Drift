@@ -1,16 +1,16 @@
 {
-  "run_at": "2026-08-31T09:36:16.252225+00:00",
-  "new_items": 65,
+  "run_at": "2026-09-01T08:32:11.214645+00:00",
+  "new_items": 95,
   "removed_duplicates": 0,
   "removed_shopping_links": 0,
-  "analysis_errors": 66,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeabkZnQM35racpnUgeNw'}",
+  "analysis_errors": 96,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CecQg3YqcaetHi54HTp1J'}",
   "repaired": 0,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 11
+      "new_items": 12
     },
     {
       "name": "Domus",
@@ -25,7 +25,7 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "STIRworld",
@@ -45,12 +45,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 1
+      "new_items": 5
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "W. David Marx — Culture",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 4
+      "new_items": 7
     },
     {
       "name": "Frame",
@@ -90,7 +90,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
@@ -105,7 +105,7 @@
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 7
+      "new_items": 12
     },
     {
       "name": "Frieze",
@@ -120,12 +120,12 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 0
+      "new_items": 12
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Architectural Digest India",
@@ -145,7 +145,7 @@
     {
       "name": "Vogue",
       "status": "ok",
-      "new_items": 11
+      "new_items": 12
     },
     {
       "name": "Vogue India",
