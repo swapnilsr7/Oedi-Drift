@@ -1,10 +1,10 @@
 {
-  "run_at": "2026-09-02T07:49:33.364542+00:00",
+  "run_at": "2026-09-03T07:57:29.380746+00:00",
   "new_items": 103,
   "removed_duplicates": 0,
-  "removed_shopping_links": 0,
+  "removed_shopping_links": 2,
   "analysis_errors": 104,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeeFES3frqSu7LzNhs6m4'}",
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ceg9eRyRqWWy2hDJQ9YEP'}",
   "repaired": 0,
   "sources": [
     {
@@ -25,12 +25,12 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "STIRworld",
-      "status": "ok",
-      "new_items": 1
+      "status": "nothing_fetched",
+      "new_items": 0
     },
     {
       "name": "Rethinking The Future",
@@ -45,12 +45,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 3
+      "new_items": 7
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 6
+      "new_items": 5
     },
     {
       "name": "W. David Marx — Culture",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 12
+      "new_items": 10
     },
     {
       "name": "Frame",
@@ -75,7 +75,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 2
+      "new_items": 5
     },
     {
       "name": "Hospitality Design",
@@ -90,7 +90,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
@@ -100,7 +100,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 5
+      "new_items": 3
     },
     {
       "name": "Fast Company Co.Design",
@@ -130,7 +130,7 @@
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "designboom design",
