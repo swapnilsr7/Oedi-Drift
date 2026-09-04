@@ -1,10 +1,10 @@
 {
-  "run_at": "2026-09-03T07:57:29.380746+00:00",
-  "new_items": 103,
+  "run_at": "2026-09-04T07:53:53.354832+00:00",
+  "new_items": 123,
   "removed_duplicates": 0,
   "removed_shopping_links": 2,
-  "analysis_errors": 104,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ceg9eRyRqWWy2hDJQ9YEP'}",
+  "analysis_errors": 124,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cei3BQ2QhnqbCZDefam3x'}",
   "repaired": 0,
   "sources": [
     {
@@ -25,12 +25,12 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "STIRworld",
-      "status": "nothing_fetched",
-      "new_items": 0
+      "status": "ok",
+      "new_items": 3
     },
     {
       "name": "Rethinking The Future",
@@ -45,12 +45,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 7
+      "new_items": 5
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 5
+      "new_items": 6
     },
     {
       "name": "W. David Marx — Culture",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 10
+      "new_items": 12
     },
     {
       "name": "Frame",
@@ -75,7 +75,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 5
+      "new_items": 3
     },
     {
       "name": "Hospitality Design",
@@ -100,7 +100,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "Fast Company Co.Design",
@@ -120,17 +120,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 5
+      "new_items": 4
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 4
+      "new_items": 9
     },
     {
       "name": "designboom design",
@@ -160,7 +160,7 @@
     {
       "name": "Art Jewelry Forum",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Lost In Jewellery Magazine",
@@ -190,7 +190,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 0
+      "new_items": 12
     }
   ]
 }
