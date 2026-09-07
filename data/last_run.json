@@ -1,16 +1,16 @@
 {
-  "run_at": "2026-09-06T07:48:58.263988+00:00",
-  "new_items": 73,
+  "run_at": "2026-09-07T08:09:55.056431+00:00",
+  "new_items": 60,
   "removed_duplicates": 0,
   "removed_shopping_links": 2,
-  "analysis_errors": 74,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CempRURy1pbHSyhreY6xE'}",
+  "analysis_errors": 61,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ceojq3CWocj71jwHNriEJ'}",
   "repaired": 0,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 12
+      "new_items": 9
     },
     {
       "name": "Domus",
@@ -30,7 +30,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Rethinking The Future",
@@ -45,7 +45,7 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Architectural Digest",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 6
+      "new_items": 4
     },
     {
       "name": "Frame",
@@ -75,7 +75,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 2
+      "new_items": 3
     },
     {
       "name": "Hospitality Design",
@@ -100,12 +100,12 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 3
+      "new_items": 1
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 8
+      "new_items": 6
     },
     {
       "name": "Frieze",
@@ -125,12 +125,12 @@
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "designboom design",
