@@ -1,16 +1,16 @@
 {
-  "run_at": "2026-09-07T08:09:55.056431+00:00",
-  "new_items": 60,
+  "run_at": "2026-09-08T07:59:08.470506+00:00",
+  "new_items": 94,
   "removed_duplicates": 0,
   "removed_shopping_links": 2,
-  "analysis_errors": 61,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ceojq3CWocj71jwHNriEJ'}",
+  "analysis_errors": 95,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeqcpHeamjGnzGxAMmnPK'}",
   "repaired": 0,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 9
+      "new_items": 12
     },
     {
       "name": "Domus",
@@ -25,12 +25,12 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Rethinking The Future",
@@ -45,12 +45,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "W. David Marx — Culture",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 4
+      "new_items": 9
     },
     {
       "name": "Frame",
@@ -100,12 +100,12 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 1
+      "new_items": 6
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 6
+      "new_items": 12
     },
     {
       "name": "Frieze",
@@ -120,17 +120,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 1
+      "new_items": 3
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 2
+      "new_items": 6
     },
     {
       "name": "designboom design",
