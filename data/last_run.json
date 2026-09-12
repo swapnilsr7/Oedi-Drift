@@ -1,10 +1,10 @@
 {
-  "run_at": "2026-09-11T07:57:59.034133+00:00",
-  "new_items": 106,
+  "run_at": "2026-09-12T07:50:21.051067+00:00",
+  "new_items": 104,
   "removed_duplicates": 0,
   "removed_shopping_links": 3,
-  "analysis_errors": 107,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CewJ9v8PcQDqyeQEgKnFK'}",
+  "analysis_errors": 105,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeyBP4YTox5WCbNDWmkGS'}",
   "repaired": 0,
   "sources": [
     {
@@ -20,7 +20,7 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Architizer",
@@ -30,7 +30,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 4
+      "new_items": 0
     },
     {
       "name": "Rethinking The Future",
@@ -45,12 +45,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 5
+      "new_items": 4
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 7
+      "new_items": 6
     },
     {
       "name": "W. David Marx — Culture",
@@ -90,7 +90,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
@@ -120,17 +120,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 4
+      "new_items": 7
     },
     {
       "name": "designboom design",
