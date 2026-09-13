@@ -1,16 +1,16 @@
 {
-  "run_at": "2026-09-12T07:50:21.051067+00:00",
-  "new_items": 104,
+  "run_at": "2026-09-13T08:12:36.014346+00:00",
+  "new_items": 69,
   "removed_duplicates": 0,
   "removed_shopping_links": 3,
-  "analysis_errors": 105,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CeyBP4YTox5WCbNDWmkGS'}",
+  "analysis_errors": 70,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf16tQpqho7NFCUqubW8m'}",
   "repaired": 0,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 12
+      "new_items": 9
     },
     {
       "name": "Domus",
@@ -20,12 +20,12 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "STIRworld",
@@ -45,12 +45,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 6
+      "new_items": 0
     },
     {
       "name": "W. David Marx — Culture",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 9
+      "new_items": 8
     },
     {
       "name": "Frame",
@@ -75,7 +75,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 5
+      "new_items": 4
     },
     {
       "name": "Hospitality Design",
@@ -90,22 +90,22 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 3
+      "new_items": 0
     },
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 10
+      "new_items": 9
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 4
+      "new_items": 0
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Frieze",
@@ -120,17 +120,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 3
+      "new_items": 0
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 7
+      "new_items": 3
     },
     {
       "name": "designboom design",
