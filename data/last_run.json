@@ -1,16 +1,16 @@
 {
-  "run_at": "2026-09-13T08:12:36.014346+00:00",
-  "new_items": 69,
+  "run_at": "2026-09-14T08:47:34.629816+00:00",
+  "new_items": 71,
   "removed_duplicates": 0,
   "removed_shopping_links": 3,
-  "analysis_errors": 70,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf16tQpqho7NFCUqubW8m'}",
+  "analysis_errors": 72,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf33N1DLph4YisQTYR2SR'}",
   "repaired": 0,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 9
+      "new_items": 12
     },
     {
       "name": "Domus",
@@ -30,7 +30,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Rethinking The Future",
@@ -45,7 +45,7 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "Architectural Digest",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 8
+      "new_items": 5
     },
     {
       "name": "Frame",
@@ -95,17 +95,17 @@
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 9
+      "new_items": 10
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 8
+      "new_items": 7
     },
     {
       "name": "Frieze",
@@ -130,7 +130,7 @@
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 3
+      "new_items": 1
     },
     {
       "name": "designboom design",
@@ -155,12 +155,12 @@
     {
       "name": "The Jewellery Editor",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Art Jewelry Forum",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Lost In Jewellery Magazine",
