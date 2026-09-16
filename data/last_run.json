@@ -1,10 +1,10 @@
 {
-  "run_at": "2026-09-15T08:34:12.041758+00:00",
-  "new_items": 107,
+  "run_at": "2026-09-16T08:28:36.941717+00:00",
+  "new_items": 114,
   "removed_duplicates": 0,
   "removed_shopping_links": 4,
-  "analysis_errors": 108,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf4v9nHpaFUTVHTuXYQfp'}",
+  "analysis_errors": 115,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cf6oXyWpNMHkzegTdqa4y'}",
   "repaired": 0,
   "sources": [
     {
@@ -30,7 +30,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 3
+      "new_items": 1
     },
     {
       "name": "Rethinking The Future",
@@ -45,12 +45,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 2
+      "new_items": 4
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 12
+      "new_items": 9
     },
     {
       "name": "W. David Marx — Culture",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 5
+      "new_items": 12
     },
     {
       "name": "Frame",
@@ -75,7 +75,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 4
+      "new_items": 5
     },
     {
       "name": "Hospitality Design",
@@ -100,7 +100,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 7
+      "new_items": 6
     },
     {
       "name": "Fast Company Co.Design",
@@ -120,7 +120,7 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 5
+      "new_items": 4
     },
     {
       "name": "Monocle",
@@ -190,7 +190,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 0
+      "new_items": 4
     }
   ]
 }
