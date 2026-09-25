@@ -1,10 +1,10 @@
 {
-  "run_at": "2026-09-24T08:20:37.298610+00:00",
-  "new_items": 107,
+  "run_at": "2026-09-25T08:43:03.530952+00:00",
+  "new_items": 108,
   "removed_duplicates": 0,
   "removed_shopping_links": 5,
-  "analysis_errors": 108,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfMwPxhiPdUsF8JwMA2Mg'}",
+  "analysis_errors": 109,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfPrv6jfu2nNH4apkhXBn'}",
   "repaired": 0,
   "sources": [
     {
@@ -20,7 +20,7 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Architizer",
@@ -45,7 +45,7 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Architectural Digest",
@@ -60,7 +60,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 9
+      "new_items": 10
     },
     {
       "name": "Frame",
@@ -75,7 +75,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 6
+      "new_items": 7
     },
     {
       "name": "Hospitality Design",
@@ -100,7 +100,7 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 7
+      "new_items": 6
     },
     {
       "name": "Fast Company Co.Design",
@@ -120,17 +120,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 7
+      "new_items": 9
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 10
+      "new_items": 2
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 1
+      "new_items": 5
     },
     {
       "name": "designboom design",
