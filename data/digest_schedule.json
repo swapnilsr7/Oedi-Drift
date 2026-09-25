@@ -1,0 +1,14 @@
+{
+  "_instructions": "One category per weekday, sent as your WhatsApp digest that day. Edit any value to any category name currently used in your archive (check the site's filter chips for the exact spelling — e.g. 'Architecture', 'Art', 'Fashion', 'Hospitality', 'Interiors', 'Jewellery', 'Product Design', 'Urbanism'). Day names must stay lowercase exactly as shown. Takes effect on the next scheduled run — no other file needs to change.",
+  "schedule": {
+    "monday": "Architecture",
+    "tuesday": "Art",
+    "wednesday": "Fashion",
+    "thursday": "Interiors",
+    "friday": "Jewellery",
+    "saturday": "Product Design",
+    "sunday": "Hospitality"
+  },
+  "items_per_digest": 5,
+  "require_distinct_sources": true
+}
