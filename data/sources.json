@@ -1,0 +1,153 @@
+{
+  "_instructions": "Add or remove sources anytime. 'homepage' is required; 'rss' is optional (null = auto-discover). Optional: 'category' pins every item to a fixed category; 'exclude_keywords' purges matching items (checked against title and URL). Horoscope/zodiac content is always excluded automatically. Edit on GitHub with the pencil icon.",
+  "sources": [
+    {
+      "name": "ArchDaily",
+      "homepage": "https://www.archdaily.com/",
+      "rss": "https://www.archdaily.com/rss/"
+    },
+    {
+      "name": "1stDibs Introspective",
+      "homepage": "https://www.1stdibs.com/introspective-magazine/",
+      "rss": null
+    },
+    {
+      "name": "Architizer",
+      "homepage": "https://architizer.com/",
+      "rss": "https://architizer.com/blog/feed/"
+    },
+    {
+      "name": "STIRworld",
+      "homepage": "https://www.stirworld.com/",
+      "rss": null
+    },
+    {
+      "name": "Dezeen",
+      "homepage": "https://www.dezeen.com/",
+      "rss": "https://feeds.feedburner.com/dezeen"
+    },
+    {
+      "name": "designboom architecture",
+      "homepage": "https://www.designboom.com/architecture/",
+      "rss": "https://www.designboom.com/architecture/feed/"
+    },
+    {
+      "name": "designboom design",
+      "homepage": "https://www.designboom.com/design/",
+      "rss": "https://www.designboom.com/design/feed/"
+    },
+    {
+      "name": "designboom",
+      "homepage": "https://www.designboom.com/",
+      "rss": "https://www.designboom.com/feed/"
+    },
+    {
+      "name": "Architectural Digest",
+      "homepage": "https://www.architecturaldigest.com/",
+      "rss": "https://www.architecturaldigest.com/feed/rss"
+    },
+    {
+      "name": "W. David Marx — Culture",
+      "homepage": "https://culture.ghost.io/author/wdavidmarx/",
+      "rss": "https://culture.ghost.io/author/wdavidmarx/rss/"
+    },
+    {
+      "name": "Wallpaper*",
+      "homepage": "https://www.wallpaper.com/",
+      "rss": "https://www.wallpaper.com/feed/rss"
+    },
+    {
+      "name": "Sleeper",
+      "homepage": "https://www.sleepermagazine.com/",
+      "rss": null
+    },
+    {
+      "name": "Hospitality Design",
+      "homepage": "https://hospitalitydesign.com/",
+      "rss": null
+    },
+    {
+      "name": "Core77",
+      "homepage": "https://www.core77.com/",
+      "rss": "https://feeds.feedburner.com/core77/blog"
+    },
+    {
+      "name": "Yanko Design",
+      "homepage": "https://www.yankodesign.com/",
+      "rss": "https://www.yankodesign.com/feed/"
+    },
+    {
+      "name": "Fast Company Co.Design",
+      "homepage": "https://www.fastcompany.com/co-design",
+      "rss": null
+    },
+    {
+      "name": "Artforum",
+      "homepage": "https://www.artforum.com/",
+      "rss": null
+    },
+    {
+      "name": "Hyperallergic",
+      "homepage": "https://hyperallergic.com/",
+      "rss": "https://hyperallergic.com/feed/"
+    },
+    {
+      "name": "Monocle",
+      "homepage": "https://monocle.com/",
+      "rss": null
+    },
+    {
+      "name": "Yatzer",
+      "homepage": "https://www.yatzer.com/",
+      "rss": "https://www.yatzer.com/rss.xml"
+    },
+    {
+      "name": "Contemporist",
+      "homepage": "https://www.contemporist.com/",
+      "rss": "https://feeds.feedburner.com/contemporist"
+    },
+    {
+      "name": "Architectural Digest India",
+      "homepage": "https://www.architecturaldigest.in/",
+      "rss": "https://www.architecturaldigest.in/feed/rss"
+    },
+    {
+      "name": "Domus India",
+      "homepage": "https://domusindianet.wordpress.com/",
+      "rss": "https://domusindianet.wordpress.com/feed/"
+    },
+    {
+      "name": "Vogue",
+      "homepage": "https://www.vogue.com/",
+      "rss": "https://www.vogue.com/feed/rss"
+    },
+    {
+      "name": "Vogue India",
+      "homepage": "https://www.vogue.in/",
+      "rss": "https://www.vogue.in/feed/rss"
+    },
+    {
+      "name": "The Jewellery Editor",
+      "homepage": "https://www.thejewelleryeditor.com/",
+      "rss": null,
+      "category": "Jewellery"
+    },
+    {
+      "name": "Art Jewelry Forum",
+      "homepage": "https://artjewelryforum.org/",
+      "rss": "https://artjewelryforum.org/feed/",
+      "category": "Jewellery"
+    },
+    {
+      "name": "MISHO",
+      "homepage": "https://www.mishodesigns.com/",
+      "rss": "https://www.mishodesigns.com/blogs/the-misho-journal.atom",
+      "category": "Jewellery"
+    },
+    {
+      "name": "Wallpaper — Jewellery tag",
+      "homepage": "https://www.wallpaper.com/tag/jewellery",
+      "rss": null
+    }
+  ]
+}
