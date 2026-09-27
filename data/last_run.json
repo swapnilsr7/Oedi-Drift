@@ -1,21 +1,17 @@
 {
-  "run_at": "2026-09-25T08:43:03.530952+00:00",
-  "new_items": 108,
+  "run_at": "2026-09-27T09:01:06.015517+00:00",
+  "new_items": 145,
   "removed_duplicates": 0,
-  "removed_shopping_links": 5,
-  "analysis_errors": 109,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfPrv6jfu2nNH4apkhXBn'}",
-  "repaired": 0,
+  "removed_shopping_links": 4,
+  "removed_excluded": 730,
+  "analysis_errors": 0,
+  "analysis_error_sample": null,
+  "repaired": 40,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
       "new_items": 12
-    },
-    {
-      "name": "Domus",
-      "status": "nothing_fetched",
-      "new_items": 0
     },
     {
       "name": "1stDibs Introspective",
@@ -30,12 +26,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 1
-    },
-    {
-      "name": "Rethinking The Future",
-      "status": "nothing_fetched",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Dezeen",
@@ -45,12 +36,22 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 2
+      "new_items": 3
+    },
+    {
+      "name": "designboom design",
+      "status": "ok",
+      "new_items": 3
+    },
+    {
+      "name": "designboom",
+      "status": "ok",
+      "new_items": 4
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 3
+      "new_items": 7
     },
     {
       "name": "W. David Marx — Culture",
@@ -60,30 +61,15 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 10
-    },
-    {
-      "name": "Frame",
-      "status": "nothing_fetched",
-      "new_items": 0
-    },
-    {
-      "name": "Metropolis",
-      "status": "nothing_fetched",
-      "new_items": 0
+      "new_items": 12
     },
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 7
+      "new_items": 5
     },
     {
       "name": "Hospitality Design",
-      "status": "nothing_fetched",
-      "new_items": 0
-    },
-    {
-      "name": "The Business of Fashion",
       "status": "nothing_fetched",
       "new_items": 0
     },
@@ -98,44 +84,39 @@
       "new_items": 10
     },
     {
-      "name": "designboom",
-      "status": "ok",
-      "new_items": 6
-    },
-    {
       "name": "Fast Company Co.Design",
       "status": "ok",
       "new_items": 12
     },
     {
-      "name": "Frieze",
-      "status": "nothing_fetched",
-      "new_items": 0
-    },
-    {
-      "name": "Artsy",
-      "status": "nothing_fetched",
-      "new_items": 0
-    },
-    {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 9
+      "new_items": 7
+    },
+    {
+      "name": "Hyperallergic",
+      "status": "ok",
+      "new_items": 12
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 2
+      "new_items": 3
+    },
+    {
+      "name": "Yatzer",
+      "status": "ok",
+      "new_items": 12
+    },
+    {
+      "name": "Contemporist",
+      "status": "ok",
+      "new_items": 10
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 5
-    },
-    {
-      "name": "designboom design",
-      "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Domus India",
@@ -150,7 +131,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 12
+      "new_items": 7
     },
     {
       "name": "The Jewellery Editor",
@@ -163,34 +144,14 @@
       "new_items": 0
     },
     {
-      "name": "Lost In Jewellery Magazine",
-      "status": "nothing_fetched",
-      "new_items": 0
-    },
-    {
-      "name": "Outhouse Jewellery",
-      "status": "nothing_fetched",
-      "new_items": 0
-    },
-    {
       "name": "MISHO",
       "status": "ok",
       "new_items": 0
     },
     {
-      "name": "PRERTO",
-      "status": "nothing_fetched",
-      "new_items": 0
-    },
-    {
-      "name": "Dezeen — Jewellery tag",
-      "status": "nothing_fetched",
-      "new_items": 0
-    },
-    {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 0
+      "new_items": 4
     }
   ]
 }
