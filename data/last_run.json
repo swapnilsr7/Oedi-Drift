@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-10-01T09:51:44.097056+00:00",
-  "new_items": 128,
+  "run_at": "2026-10-02T09:28:03.785755+00:00",
+  "new_items": 105,
   "removed_duplicates": 0,
   "removed_shopping_links": 3,
   "removed_excluded": 0,
@@ -21,12 +21,12 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 1
+      "new_items": 4
     },
     {
       "name": "Dezeen",
@@ -36,22 +36,22 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 5
+      "new_items": 1
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 5
+      "new_items": 4
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 7
+      "new_items": 6
     },
     {
       "name": "W. David Marx — Culture",
@@ -61,12 +61,12 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 12
+      "new_items": 9
     },
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 5
+      "new_items": 4
     },
     {
       "name": "Hospitality Design",
@@ -76,7 +76,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
@@ -91,22 +91,22 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 12
+      "new_items": 4
     },
     {
       "name": "Hyperallergic",
       "status": "ok",
-      "new_items": 10
+      "new_items": 9
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 10
+      "new_items": 2
     },
     {
       "name": "Yatzer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Contemporist",
@@ -131,12 +131,12 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 4
+      "new_items": 6
     },
     {
       "name": "The Jewellery Editor",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Art Jewelry Forum",
