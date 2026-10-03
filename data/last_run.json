@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-02T09:28:03.785755+00:00",
+  "run_at": "2026-10-03T08:56:21.242399+00:00",
   "new_items": 105,
   "removed_duplicates": 0,
   "removed_shopping_links": 3,
@@ -16,7 +16,7 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 0
+      "new_items": 4
     },
     {
       "name": "Architizer",
@@ -26,7 +26,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 4
+      "new_items": 0
     },
     {
       "name": "Dezeen",
@@ -36,17 +36,17 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 1
+      "new_items": 4
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "Architectural Digest",
@@ -61,7 +61,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 9
+      "new_items": 3
     },
     {
       "name": "Sleeper",
@@ -91,7 +91,7 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 4
+      "new_items": 9
     },
     {
       "name": "Hyperallergic",
@@ -101,7 +101,7 @@
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 2
+      "new_items": 3
     },
     {
       "name": "Yatzer",
@@ -131,7 +131,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 6
+      "new_items": 3
     },
     {
       "name": "The Jewellery Editor",
