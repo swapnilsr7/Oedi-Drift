@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-10-03T08:56:21.242399+00:00",
-  "new_items": 105,
+  "run_at": "2026-10-04T09:26:49.685063+00:00",
+  "new_items": 64,
   "removed_duplicates": 0,
   "removed_shopping_links": 3,
   "removed_excluded": 0,
@@ -16,12 +16,12 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 4
+      "new_items": 0
     },
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "STIRworld",
@@ -36,22 +36,22 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 4
+      "new_items": 0
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 6
+      "new_items": 0
     },
     {
       "name": "W. David Marx — Culture",
@@ -61,12 +61,12 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "Hospitality Design",
@@ -76,32 +76,32 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 3
+      "new_items": 0
     },
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 12
+      "new_items": 10
     },
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 9
+      "new_items": 0
     },
     {
       "name": "Hyperallergic",
       "status": "ok",
-      "new_items": 9
+      "new_items": 1
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "Yatzer",
@@ -131,7 +131,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 3
+      "new_items": 6
     },
     {
       "name": "The Jewellery Editor",
