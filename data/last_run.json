@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-10-05T10:07:19.896780+00:00",
-  "new_items": 70,
+  "run_at": "2026-10-06T09:51:41.119908+00:00",
+  "new_items": 109,
   "removed_duplicates": 0,
   "removed_shopping_links": 3,
   "removed_excluded": 0,
@@ -21,7 +21,7 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "STIRworld",
@@ -36,22 +36,22 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 1
+      "new_items": 5
     },
     {
       "name": "W. David Marx — Culture",
@@ -61,7 +61,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 4
+      "new_items": 12
     },
     {
       "name": "Sleeper",
@@ -76,37 +76,37 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 11
+      "new_items": 12
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 5
+      "new_items": 12
     },
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 0
+      "new_items": 6
     },
     {
       "name": "Hyperallergic",
       "status": "ok",
-      "new_items": 1
+      "new_items": 6
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Yatzer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Contemporist",
@@ -116,7 +116,7 @@
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 7
+      "new_items": 5
     },
     {
       "name": "Domus India",
@@ -131,7 +131,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 3
+      "new_items": 6
     },
     {
       "name": "The Jewellery Editor",
@@ -151,7 +151,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     }
   ]
 }
