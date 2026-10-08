@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-10-07T09:57:48.695670+00:00",
-  "new_items": 121,
+  "run_at": "2026-10-08T10:10:07.817454+00:00",
+  "new_items": 120,
   "removed_duplicates": 0,
   "removed_shopping_links": 3,
   "removed_excluded": 0,
@@ -21,12 +21,12 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Dezeen",
@@ -36,22 +36,22 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 2
+      "new_items": 4
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 5
+      "new_items": 3
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 9
+      "new_items": 8
     },
     {
       "name": "W. David Marx — Culture",
@@ -61,12 +61,12 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 7
+      "new_items": 12
     },
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 7
+      "new_items": 3
     },
     {
       "name": "Hospitality Design",
@@ -91,22 +91,22 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 6
+      "new_items": 7
     },
     {
       "name": "Hyperallergic",
       "status": "ok",
-      "new_items": 12
+      "new_items": 10
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 4
+      "new_items": 1
     },
     {
       "name": "Yatzer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Contemporist",
@@ -116,7 +116,7 @@
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 3
+      "new_items": 6
     },
     {
       "name": "Domus India",
@@ -131,7 +131,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 6
+      "new_items": 5
     },
     {
       "name": "The Jewellery Editor",
@@ -151,7 +151,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 0
+      "new_items": 4
     }
   ]
 }
