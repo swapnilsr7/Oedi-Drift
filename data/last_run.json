@@ -1,8 +1,8 @@
 {
-  "run_at": "2026-10-08T10:10:07.817454+00:00",
-  "new_items": 120,
+  "run_at": "2026-10-09T10:11:33.759912+00:00",
+  "new_items": 111,
   "removed_duplicates": 0,
-  "removed_shopping_links": 3,
+  "removed_shopping_links": 2,
   "removed_excluded": 0,
   "analysis_errors": 0,
   "analysis_error_sample": null,
@@ -21,12 +21,12 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 1
+      "new_items": 3
     },
     {
       "name": "Dezeen",
@@ -36,22 +36,22 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 4
+      "new_items": 1
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 8
+      "new_items": 4
     },
     {
       "name": "W. David Marx — Culture",
@@ -66,7 +66,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 3
+      "new_items": 5
     },
     {
       "name": "Hospitality Design",
@@ -91,22 +91,22 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 7
+      "new_items": 8
     },
     {
       "name": "Hyperallergic",
       "status": "ok",
-      "new_items": 10
+      "new_items": 9
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Yatzer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Contemporist",
@@ -116,7 +116,7 @@
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 6
+      "new_items": 1
     },
     {
       "name": "Domus India",
@@ -131,7 +131,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 5
+      "new_items": 6
     },
     {
       "name": "The Jewellery Editor",
@@ -150,8 +150,9 @@
     },
     {
       "name": "Wallpaper — Jewellery tag",
-      "status": "ok",
-      "new_items": 4
+      "status": "nothing_fetched",
+      "new_items": 0,
+      "feed_status": "fetch_failed: HTTPSConnectionPool(host='www.wallpaper.com', port=443): Read timed out. (read timeout=15)"
     }
   ]
 }
