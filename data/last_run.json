@@ -1,8 +1,8 @@
 {
-  "run_at": "2026-10-09T10:11:33.759912+00:00",
-  "new_items": 111,
+  "run_at": "2026-10-10T09:32:47.108065+00:00",
+  "new_items": 116,
   "removed_duplicates": 0,
-  "removed_shopping_links": 2,
+  "removed_shopping_links": 3,
   "removed_excluded": 0,
   "analysis_errors": 0,
   "analysis_error_sample": null,
@@ -16,17 +16,17 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 3
+      "new_items": 1
     },
     {
       "name": "Dezeen",
@@ -41,17 +41,17 @@
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 2
+      "new_items": 3
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 4
+      "new_items": 1
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 4
+      "new_items": 5
     },
     {
       "name": "W. David Marx — Culture",
@@ -66,7 +66,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 5
+      "new_items": 3
     },
     {
       "name": "Hospitality Design",
@@ -96,17 +96,17 @@
     {
       "name": "Hyperallergic",
       "status": "ok",
-      "new_items": 9
+      "new_items": 7
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 2
+      "new_items": 3
     },
     {
       "name": "Yatzer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Contemporist",
@@ -116,7 +116,7 @@
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 1
+      "new_items": 3
     },
     {
       "name": "Domus India",
@@ -131,12 +131,12 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 6
+      "new_items": 9
     },
     {
       "name": "The Jewellery Editor",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Art Jewelry Forum",
@@ -150,9 +150,8 @@
     },
     {
       "name": "Wallpaper — Jewellery tag",
-      "status": "nothing_fetched",
-      "new_items": 0,
-      "feed_status": "fetch_failed: HTTPSConnectionPool(host='www.wallpaper.com', port=443): Read timed out. (read timeout=15)"
+      "status": "ok",
+      "new_items": 2
     }
   ]
 }
