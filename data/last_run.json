@@ -1,11 +1,11 @@
 {
-  "run_at": "2026-10-15T08:03:48.777772+00:00",
-  "new_items": 112,
+  "run_at": "2026-10-16T07:57:41.006711+00:00",
+  "new_items": 114,
   "removed_duplicates": 0,
   "removed_shopping_links": 3,
   "removed_excluded": 0,
-  "analysis_errors": 71,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg3gGVSb6par2MfM2GXcz'}",
+  "analysis_errors": 115,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg5ZSeehXNH1Kr6rKcQYX'}",
   "repaired": 0,
   "sources": [
     {
@@ -21,7 +21,7 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "STIRworld",
@@ -41,17 +41,17 @@
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 5
+      "new_items": 2
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 2
+      "new_items": 3
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 6
+      "new_items": 7
     },
     {
       "name": "W. David Marx — Culture",
@@ -61,12 +61,12 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 3
+      "new_items": 5
     },
     {
       "name": "Hospitality Design",
@@ -96,12 +96,12 @@
     {
       "name": "Hyperallergic",
       "status": "ok",
-      "new_items": 10
+      "new_items": 11
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "Yatzer",
@@ -111,12 +111,12 @@
     {
       "name": "Contemporist",
       "status": "ok",
-      "new_items": 1
+      "new_items": 4
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 2
+      "new_items": 5
     },
     {
       "name": "Domus India",
@@ -151,7 +151,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     }
   ]
 }
