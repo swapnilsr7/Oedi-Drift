@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-10-19T08:34:58.791527+00:00",
-  "new_items": 64,
+  "run_at": "2026-10-20T08:16:15.414393+00:00",
+  "new_items": 116,
   "removed_duplicates": 0,
   "removed_shopping_links": 3,
   "removed_excluded": 0,
@@ -11,7 +11,7 @@
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 11
+      "new_items": 12
     },
     {
       "name": "1stDibs Introspective",
@@ -21,7 +21,7 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "STIRworld",
@@ -36,22 +36,22 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 2
+      "new_items": 4
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 1
+      "new_items": 5
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 1
+      "new_items": 2
     },
     {
       "name": "W. David Marx — Culture",
@@ -61,12 +61,12 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 6
+      "new_items": 9
     },
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 3
+      "new_items": 5
     },
     {
       "name": "Hospitality Design",
@@ -76,32 +76,32 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 0
+      "new_items": 3
     },
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 10
+      "new_items": 12
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 8
+      "new_items": 12
     },
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 0
+      "new_items": 7
     },
     {
       "name": "Hyperallergic",
       "status": "ok",
-      "new_items": 0
+      "new_items": 12
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Yatzer",
@@ -116,7 +116,7 @@
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 2
+      "new_items": 5
     },
     {
       "name": "Domus India",
@@ -131,7 +131,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 5
+      "new_items": 6
     },
     {
       "name": "The Jewellery Editor",
