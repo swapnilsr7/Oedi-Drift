@@ -1,8 +1,8 @@
 {
-  "run_at": "2026-10-21T08:21:17.437665+00:00",
-  "new_items": 118,
+  "run_at": "2026-10-22T08:23:07.439029+00:00",
+  "new_items": 134,
   "removed_duplicates": 0,
-  "removed_shopping_links": 4,
+  "removed_shopping_links": 5,
   "removed_excluded": 0,
   "analysis_errors": 0,
   "analysis_error_sample": null,
@@ -21,7 +21,7 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "STIRworld",
@@ -36,12 +36,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 1
+      "new_items": 3
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 2
+      "new_items": 6
     },
     {
       "name": "designboom",
@@ -51,7 +51,7 @@
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 6
+      "new_items": 8
     },
     {
       "name": "W. David Marx — Culture",
@@ -66,7 +66,7 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 6
+      "new_items": 7
     },
     {
       "name": "Hospitality Design",
@@ -76,7 +76,7 @@
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "Yanko Design",
@@ -101,22 +101,22 @@
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 3
+      "new_items": 10
     },
     {
       "name": "Yatzer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Contemporist",
       "status": "ok",
-      "new_items": 6
+      "new_items": 3
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 3
+      "new_items": 5
     },
     {
       "name": "Domus India",
@@ -131,7 +131,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 4
+      "new_items": 7
     },
     {
       "name": "The Jewellery Editor",
@@ -151,7 +151,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     }
   ]
 }
