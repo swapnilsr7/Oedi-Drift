@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-10-22T08:23:07.439029+00:00",
-  "new_items": 134,
+  "run_at": "2026-10-23T08:19:50.539587+00:00",
+  "new_items": 128,
   "removed_duplicates": 0,
   "removed_shopping_links": 5,
   "removed_excluded": 0,
@@ -21,12 +21,12 @@
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "STIRworld",
-      "status": "ok",
-      "new_items": 1
+      "status": "nothing_fetched",
+      "new_items": 0
     },
     {
       "name": "Dezeen",
@@ -36,17 +36,17 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 6
+      "new_items": 3
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 4
+      "new_items": 5
     },
     {
       "name": "Architectural Digest",
@@ -70,13 +70,13 @@
     },
     {
       "name": "Hospitality Design",
-      "status": "nothing_fetched",
-      "new_items": 0
+      "status": "ok",
+      "new_items": 10
     },
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 4
+      "new_items": 0
     },
     {
       "name": "Yanko Design",
@@ -91,17 +91,17 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 6
+      "new_items": 7
     },
     {
       "name": "Hyperallergic",
       "status": "ok",
-      "new_items": 10
+      "new_items": 9
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 10
+      "new_items": 2
     },
     {
       "name": "Yatzer",
@@ -111,7 +111,7 @@
     {
       "name": "Contemporist",
       "status": "ok",
-      "new_items": 3
+      "new_items": 5
     },
     {
       "name": "Architectural Digest India",
@@ -131,7 +131,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 7
+      "new_items": 4
     },
     {
       "name": "The Jewellery Editor",
