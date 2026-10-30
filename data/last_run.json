@@ -1,6 +1,6 @@
 {
-  "run_at": "2026-10-29T09:32:32.954125+00:00",
-  "new_items": 125,
+  "run_at": "2026-10-30T09:42:42.469401+00:00",
+  "new_items": 121,
   "removed_duplicates": 0,
   "removed_shopping_links": 6,
   "removed_excluded": 0,
@@ -26,7 +26,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 1
+      "new_items": 3
     },
     {
       "name": "Dezeen",
@@ -36,22 +36,22 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 3
+      "new_items": 2
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 1
+      "new_items": 4
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "W. David Marx — Culture",
@@ -66,17 +66,17 @@
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 7
+      "new_items": 6
     },
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 0
+      "new_items": 5
     },
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 3
+      "new_items": 4
     },
     {
       "name": "Yanko Design",
@@ -96,12 +96,12 @@
     {
       "name": "Hyperallergic",
       "status": "ok",
-      "new_items": 11
+      "new_items": 8
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 10
+      "new_items": 2
     },
     {
       "name": "Yatzer",
@@ -111,12 +111,12 @@
     {
       "name": "Contemporist",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 12
+      "new_items": 10
     },
     {
       "name": "Domus India",
@@ -131,7 +131,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 5
+      "new_items": 6
     },
     {
       "name": "The Jewellery Editor",
