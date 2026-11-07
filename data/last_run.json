@@ -1,11 +1,11 @@
 {
-  "run_at": "2026-11-06T10:29:41.120683+00:00",
-  "new_items": 137,
+  "run_at": "2026-11-07T09:42:18.914445+00:00",
+  "new_items": 119,
   "removed_duplicates": 0,
-  "removed_shopping_links": 5,
+  "removed_shopping_links": 6,
   "removed_excluded": 0,
-  "analysis_errors": 138,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgmX2AbjNfa9YAaNXeT3w'}",
+  "analysis_errors": 120,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgoMDYocWkQDP8HcsxmFp'}",
   "repaired": 0,
   "sources": [
     {
@@ -16,7 +16,7 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Architizer",
@@ -26,7 +26,7 @@
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 3
+      "new_items": 0
     },
     {
       "name": "Dezeen",
@@ -46,12 +46,12 @@
     {
       "name": "designboom",
       "status": "ok",
-      "new_items": 3
+      "new_items": 1
     },
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 11
+      "new_items": 4
     },
     {
       "name": "W. David Marx — Culture",
@@ -61,17 +61,17 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 11
+      "new_items": 10
     },
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 6
+      "new_items": 8
     },
     {
       "name": "Hospitality Design",
-      "status": "nothing_fetched",
-      "new_items": 0
+      "status": "ok",
+      "new_items": 2
     },
     {
       "name": "Core77",
@@ -91,7 +91,7 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 8
+      "new_items": 7
     },
     {
       "name": "Hyperallergic",
@@ -101,7 +101,7 @@
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 3
+      "new_items": 1
     },
     {
       "name": "Yatzer",
@@ -111,7 +111,7 @@
     {
       "name": "Contemporist",
       "status": "ok",
-      "new_items": 4
+      "new_items": 0
     },
     {
       "name": "Architectural Digest India",
@@ -131,7 +131,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 11
+      "new_items": 7
     },
     {
       "name": "The Jewellery Editor",
