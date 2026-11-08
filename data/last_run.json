@@ -1,32 +1,32 @@
 {
-  "run_at": "2026-11-07T09:42:18.914445+00:00",
-  "new_items": 119,
+  "run_at": "2026-11-08T09:56:23.954200+00:00",
+  "new_items": 93,
   "removed_duplicates": 0,
-  "removed_shopping_links": 6,
+  "removed_shopping_links": 7,
   "removed_excluded": 0,
-  "analysis_errors": 120,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgoMDYocWkQDP8HcsxmFp'}",
+  "analysis_errors": 94,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgqG6n7YxiRPdZwLJ28NL'}",
   "repaired": 0,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 12
+      "new_items": 11
     },
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Dezeen",
@@ -41,7 +41,7 @@
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "designboom",
@@ -51,7 +51,7 @@
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "W. David Marx — Culture",
@@ -61,42 +61,42 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 10
+      "new_items": 12
     },
     {
       "name": "Sleeper",
       "status": "ok",
-      "new_items": 8
+      "new_items": 7
     },
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 3
+      "new_items": 0
     },
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 12
+      "new_items": 11
     },
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 7
+      "new_items": 1
     },
     {
       "name": "Hyperallergic",
       "status": "ok",
-      "new_items": 8
+      "new_items": 1
     },
     {
       "name": "Monocle",
@@ -106,7 +106,7 @@
     {
       "name": "Yatzer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Contemporist",
@@ -131,7 +131,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 7
+      "new_items": 5
     },
     {
       "name": "The Jewellery Editor",
@@ -151,7 +151,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     }
   ]
 }
