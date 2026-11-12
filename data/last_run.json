@@ -1,11 +1,11 @@
 {
-  "run_at": "2026-11-11T10:27:25.603917+00:00",
-  "new_items": 135,
+  "run_at": "2026-11-12T10:44:10.504514+00:00",
+  "new_items": 122,
   "removed_duplicates": 0,
-  "removed_shopping_links": 7,
+  "removed_shopping_links": 8,
   "removed_excluded": 0,
-  "analysis_errors": 136,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cgvytk6aJ5XV8F2b5LuKT'}",
+  "analysis_errors": 123,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cgxtyjj54DoTs1gtcaEgC'}",
   "repaired": 0,
   "sources": [
     {
@@ -16,17 +16,17 @@
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "STIRworld",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "Dezeen",
@@ -36,12 +36,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 1
+      "new_items": 3
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 4
+      "new_items": 1
     },
     {
       "name": "designboom",
@@ -51,7 +51,7 @@
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 7
+      "new_items": 4
     },
     {
       "name": "W. David Marx — Culture",
@@ -61,7 +61,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 12
+      "new_items": 10
     },
     {
       "name": "Sleeper",
@@ -71,12 +71,12 @@
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 4
+      "new_items": 0
     },
     {
       "name": "Yanko Design",
@@ -91,7 +91,7 @@
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 6
+      "new_items": 7
     },
     {
       "name": "Hyperallergic",
@@ -101,7 +101,7 @@
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "Yatzer",
@@ -116,7 +116,7 @@
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 10
+      "new_items": 9
     },
     {
       "name": "Domus India",
@@ -131,12 +131,12 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 8
+      "new_items": 7
     },
     {
       "name": "The Jewellery Editor",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Art Jewelry Forum",
@@ -151,7 +151,7 @@
     {
       "name": "Wallpaper — Jewellery tag",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     }
   ]
 }
