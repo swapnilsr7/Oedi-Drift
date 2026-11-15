@@ -1,27 +1,27 @@
 {
-  "run_at": "2026-11-14T09:53:08.530178+00:00",
-  "new_items": 111,
+  "run_at": "2026-11-15T10:29:24.821078+00:00",
+  "new_items": 80,
   "removed_duplicates": 0,
   "removed_shopping_links": 9,
   "removed_excluded": 0,
-  "analysis_errors": 112,
-  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch2chr1Ynm13PVmUPC8pC'}",
+  "analysis_errors": 81,
+  "analysis_error_sample": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch4ZHBjv5nfuSngxeSLHr'}",
   "repaired": 0,
   "sources": [
     {
       "name": "ArchDaily",
       "status": "ok",
-      "new_items": 12
+      "new_items": 10
     },
     {
       "name": "1stDibs Introspective",
       "status": "ok",
-      "new_items": 2
+      "new_items": 0
     },
     {
       "name": "Architizer",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "STIRworld",
@@ -36,12 +36,12 @@
     {
       "name": "designboom architecture",
       "status": "ok",
-      "new_items": 3
+      "new_items": 1
     },
     {
       "name": "designboom design",
       "status": "ok",
-      "new_items": 0
+      "new_items": 2
     },
     {
       "name": "designboom",
@@ -51,7 +51,7 @@
     {
       "name": "Architectural Digest",
       "status": "ok",
-      "new_items": 7
+      "new_items": 0
     },
     {
       "name": "W. David Marx — Culture",
@@ -61,7 +61,7 @@
     {
       "name": "Wallpaper*",
       "status": "ok",
-      "new_items": 7
+      "new_items": 5
     },
     {
       "name": "Sleeper",
@@ -71,52 +71,52 @@
     {
       "name": "Hospitality Design",
       "status": "ok",
-      "new_items": 1
+      "new_items": 0
     },
     {
       "name": "Core77",
       "status": "ok",
-      "new_items": 3
+      "new_items": 0
     },
     {
       "name": "Yanko Design",
       "status": "ok",
-      "new_items": 12
+      "new_items": 8
     },
     {
       "name": "Fast Company Co.Design",
       "status": "ok",
-      "new_items": 12
+      "new_items": 10
     },
     {
       "name": "Artforum",
       "status": "ok",
-      "new_items": 5
+      "new_items": 0
     },
     {
       "name": "Hyperallergic",
       "status": "ok",
-      "new_items": 10
+      "new_items": 1
     },
     {
       "name": "Monocle",
       "status": "ok",
-      "new_items": 2
+      "new_items": 1
     },
     {
       "name": "Yatzer",
       "status": "ok",
-      "new_items": 0
+      "new_items": 1
     },
     {
       "name": "Contemporist",
       "status": "ok",
-      "new_items": 0
+      "new_items": 10
     },
     {
       "name": "Architectural Digest India",
       "status": "ok",
-      "new_items": 4
+      "new_items": 3
     },
     {
       "name": "Domus India",
@@ -131,7 +131,7 @@
     {
       "name": "Vogue India",
       "status": "ok",
-      "new_items": 8
+      "new_items": 6
     },
     {
       "name": "The Jewellery Editor",
